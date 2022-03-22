@@ -35,15 +35,13 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json()); 
 
-// Définition des différentes routes : utilisateur, publications, likes,commentaires :
+// Définition des différentes routes : utilisateur, publications, likes,commentaires.
+// Route images.
 
 app.use('/api/users', apiLimiter, userRoutes);  
 app.use('/api/posts', postRoutes);              
 app.use('/api/likes', likeRoutes);            
 app.use('/api/comments', commentRoutes);        
-
-// Routes images :
-
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Exportation de l'application
