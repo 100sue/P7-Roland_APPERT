@@ -120,7 +120,7 @@ Tools used for this project : HTML5, CSS3,JavaScript, Node.js, Vue.js, Express, 
 I also used a lot of depencies like : Bcrypt, Dotenv, Helmet, Jsonwebtoken, Multer, Password-validator.
 
 <br>
-# How to make this project work:
+## Front-end : How to make this project work.
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -149,9 +149,9 @@ npm run dev
 ```sh
 npm run build
 ```
+<br>
 
-
-# Back-end :How to make this project work: 
+## Back-end : How to make this project work: 
 
 Pre setup
 
