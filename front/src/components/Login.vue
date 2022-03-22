@@ -88,12 +88,13 @@
     }
     input {
         margin-bottom: 3%;
+        height: 1.8rem;
     }
     .form-btn {
         width: 100%;
         margin-top: 3%;
-        background-color: rgb(49, 94, 240);
-        color: white;
+        background-color: #FD340A;
+        color: black;
         height: 3em;
         border-radius: 10px;
     }
