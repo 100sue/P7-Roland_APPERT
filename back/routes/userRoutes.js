@@ -1,7 +1,7 @@
 const express = require('express'); 
 const router = express.Router();
 const userCtrl = require('../controllers/userCtrl');
-const verifyPassword = require('../middleware/verifyPassword');
+const verifyPassword = require('../middleware/verifyPasswords');
 const multer = require('../middleware/multer-config');
 const auth = require('../middleware/auth'); 
 
