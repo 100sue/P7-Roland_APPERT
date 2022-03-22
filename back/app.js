@@ -35,7 +35,8 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json()); 
 
-// Définition des différentes routes : utilisateur, publications, likes,commentaires.
+// Définition des différentes routes : utilisateur, publications, likes,commentaires :
+
 app.use('/api/users', apiLimiter, userRoutes);  
 app.use('/api/posts', postRoutes);              
 app.use('/api/likes', likeRoutes);            
