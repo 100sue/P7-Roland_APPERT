@@ -120,6 +120,23 @@ Tools used for this project : HTML5, CSS3,JavaScript, Node.js, Vue.js, Express, 
 I also used a lot of depencies like : Bcrypt, Dotenv, Helmet, Jsonwebtoken, Multer, Password-validator.
 
 <br>
+## Back-end :How to make this project work: ##
+
+Pre setup
+
+Complete the env file with your own USER, PASSWORD and JWT_SECRET_TOKEN
+Import the database groupomania.sql 
+
+Project setup
+
+npm install
+npm install -g nodemon
+
+Compiles and hot-reloads for development
+
+nodemon server
+
+
 
 <p align="center">
 <img src= "https://user-images.githubusercontent.com/90606431/151660985-c0a30670-7d3b-4b86-89fe-566e96a15e79.jpg" />
