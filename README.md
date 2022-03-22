@@ -156,7 +156,7 @@ npm run build
 Pre setup
 
 Complete the env file with your own USER, PASSWORD and JWT_SECRET_TOKEN
-Import the database groupomania.sql 
+Import the database .sql 
 
 Project setup
 
