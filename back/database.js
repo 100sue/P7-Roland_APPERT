@@ -1,5 +1,5 @@
 // Imporation mysql 
-const mysql = require('mysql');  
+const mysql = require('mysql2');  
 
 // Création de la connexion à la base de données MySQL
 const db = mysql.createConnection ({ 
