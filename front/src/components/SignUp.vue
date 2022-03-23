@@ -82,7 +82,7 @@
                         })
                         // Inscription réussite, maj du localStorage et redirection sur le Login
                         .then(reponse => { console.log(reponse)
-                            alert("Inscription réussite ! Veuillez vous connecter pour accéder à votre compte !")
+                            alert("Inscription réussie ! Veuillez vous connecter pour accéder à votre compte !")
                             localStorage.clear();
                             this.$router.go(0); 
                         })
@@ -104,6 +104,7 @@
     .signup-container {
         padding: 0.5%;
         border: 2px solid #333;
+        box-shadow: 0px 3px 3px #333;
     }
     h1 {
         text-align: center;

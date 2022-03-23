@@ -348,6 +348,7 @@
         position: absolute;
         right: 0;
         margin-right: 5%;
+        
     }
     /* Medium devices (tablets, 768px and up) */
     @media screen and (max-width: 1023px) {

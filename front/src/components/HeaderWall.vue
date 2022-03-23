@@ -7,7 +7,7 @@
                 <img src="../assets/main-header.png" alt="Réseau social d'entreprise Groupomania" class="logo-img">
             </router-link>
             <router-link to="/community" title="Membres de l'équipe" class="users-header">
-                <i class="fas -solid fa-users"></i>
+                <i class="fas -solid fa-users "></i>
             </router-link>
             <router-link to="/profil" title="Profil" class="profil-header">
                 <i class="fas fa-user-circle"></i>
@@ -57,12 +57,12 @@
     }
     i {
         font-size: 1.5em;
-        color: rgb(30, 51, 121);
-        transition: transform .3s;
+        color: #2551e2;
+        transition: transform .5s;
     }
     i:hover {
         border-radius: 100%;
-        transform: rotate(720deg);
+        transform: rotate(360deg);
     }
     /* Small device (smartphone, to 767px max) */
     @media screen and (max-width: 767px) {

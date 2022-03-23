@@ -56,7 +56,7 @@
                     this.$router.push({ name:'Wall' }); 
                 })
                 .catch(() => {
-                    window.alert("Identifiant ou mot de passe incorrect");
+                    window.alert("Votre identifiant ou votre mot de passe sont incorrect");
                 });    
             }  
         },
@@ -74,6 +74,7 @@
     .login-container {
         padding: 0.5%;
         border: 2px solid #333;
+        box-shadow: 0px 3px 3px #333;
     }
     h1 {
         text-align: center;

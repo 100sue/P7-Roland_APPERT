@@ -81,7 +81,7 @@
     }  
     .post-card {
         box-shadow: 0 0 20px #000000b3;
-        background: #f1f1f1;
+        background: #315EF0;
         border-radius: 5px;
     }  
     .hidden {
@@ -90,6 +90,7 @@
     h1 {
         padding-top: 2%;
         padding-left: 4%;
+        color: white;
     }
     .post-infos {
         text-align: center;
@@ -110,6 +111,7 @@
         margin-left: 4%;
         margin-bottom: 2%;
         padding: 1%;
+        background: #819bee;
     }
     .post-img > input {
         display: none;
@@ -120,9 +122,9 @@
         justify-content: center;
         align-content: center;
         display: flex;
-        padding-top: 1%;
-        color: rgb(30, 51, 121);
-        transition: transform .3s;
+        padding-top: 2%;
+        color: white;
+        transition: transform .2s;
     }
     .post-img:hover {
         transform: scale(1.1);
@@ -131,7 +133,10 @@
         margin-right: 4%;
         margin-bottom: 2%;
         width: 40%;
-        background-color: rgb(49, 94, 240);
+        background-color: #FD340A;
+        border: 1px solid #D4D3E8;
+        box-shadow: 0px 1px 1px black;
+        font-weight: 700;
         color: white;
         height: 3em;
         border-radius: 10px;

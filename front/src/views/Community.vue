@@ -28,7 +28,7 @@
                 </span>
                 <!-- En cas de recherche infructueuse -->
                 <div class="search-no-result" v-if="filteredList.length == 0">
-                    <h2>Désolé..</h2>
+                    <h2>Nous sommes, désolé ...</h2>
                     <p>Aucun résultat trouvé</p>
                 </div>
             </section>
@@ -117,13 +117,14 @@
         margin: auto;
         padding-top: 0.1%;
         padding-bottom: 1%;
-        background: #f1f1f1;
+        background: #315EF0;
         border-radius: 5px;
         box-shadow: 0 0 20px #000000b3;
         box-sizing: border-box;
     }
     .community-title {
         text-align: center;
+        color: white;
     }
     .community-search {
         position: relative;
