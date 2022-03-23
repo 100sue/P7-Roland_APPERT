@@ -73,6 +73,7 @@
     }
     .login-container {
         padding: 0.5%;
+        border: 2px solid #333;
     }
     h1 {
         text-align: center;
@@ -88,22 +89,31 @@
         flex-direction: column;
     }
     input {
-        margin-bottom: 3%;
-        height: 2rem;
+        margin-bottom: 6%;
+        height: 2.2rem;
     }
     .form-btn {
         width: 100%;
-        margin-top: 3%;
-        background-color: #FD340A;
-        color: white;
-        height: 3em;
-        border-radius: 10px;
-        font-size: 18px;
+            margin-top: 25px;
+            padding: 16px 20px;
+            background-color: #FD340A;
+            color: white;
+            height: 3.2rem;
+            border-radius: 26px;
+            border: 1px solid #D4D3E8;
+            box-shadow: 0px 2px 2px black;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+            font-weight: 700;
     }
     .sign-card {
         font-style: italic;
         text-align: center;
         color: white;
+    }
+    .sign-card a {
+        text-decoration: none;
     }
     /* Small device (smartphone, to 767px max) */
     @media screen and (max-width: 767px) {
