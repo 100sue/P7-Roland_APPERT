@@ -72,14 +72,14 @@
             }
         },
         computed: {
-            // Fonction permettant de filtrer et d'affiner la recherche en fonction du nom ou du prénom de l'utilisateur rechercher
+            // Fonction permettant de filtrer et d'affiner la recherche en fonction du nom ou du prénom de l'utilisateur recherché.
             filteredList() {
                 return this.users.filter((user) => {
                     return user.nom.toLowerCase().includes(this.searchKey.toLowerCase()) || user.prenom.toLowerCase().includes(this.searchKey.toLowerCase());
                 })
             }
         },
-        // Récupération de la liste de membres inscrits 
+        // Récupération de la liste de membres inscrits. 
         created() {
             this.token = localStorage.getItem('token')
             fetch("http://localhost:3000/api/users", {

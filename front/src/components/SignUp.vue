@@ -98,7 +98,7 @@
 <style scoped>
     * {
         font-family: 'Titillium Web', sans-serif;
-        background-color: white;
+        background-color: #315EF0;
         border-radius: 5px;
     }
     .signup-container {
@@ -107,6 +107,7 @@
     h1 {
         text-align: center;
         font-size: 2em;
+        color: white;
     }
     .form-card {
         margin-left: 5%;
@@ -125,8 +126,9 @@
         margin-top: 3%;
         background-color: #FD340A;
         color: white;
-        height: 3em;
+        height: 3.2rem;
         border-radius: 10px;
+        font-size: 18px;
     }
     .sign-card {
         font-style: italic;
