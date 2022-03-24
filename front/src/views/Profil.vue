@@ -186,18 +186,19 @@
         height: auto;
         margin: auto;
         padding: 1%;
-        background: #f1f1f1;
+        background: #315EF0;
         border-radius: 5px;
-        box-shadow: 0 0 20px #000000b3;
         box-sizing: border-box;
+        border: 2px solid #333;
+        box-shadow: 0px 3px 3px #333;
     }
-        .profil-avatar {
+    .profil-avatar {
         width: 50px;
         height: 50px;
     }
     #profil-avatar-icon {  
         font-size: 3em;
-        color: rgb(30, 51, 121);
+        color: #FD340A;
     }
     #profil-avatar-img {
         height: 50px;
@@ -207,9 +208,13 @@
     }
     .profil-avatar-btn {
         margin-top: 15%;
+        background-color: #315EF0;
+        border-radius: 10px;
+         color: white;
     }
     .profil-pic-form > input {
         display: none;
+
     }
     .profil-pic-form {
         display: flex;
@@ -241,7 +246,8 @@
         flex-direction: column;
     }
     input {
-        margin-bottom: 3%;
+        margin-bottom: 6%;
+        height: 2.2rem;
     }
     .form-btn {
         width: 100%;
@@ -250,15 +256,23 @@
         color: white;
         height: 3em;
         border-radius: 10px;
+        border: 1px solid #D4D3E8;
+        box-shadow: 0px 2px 2px black;
+        text-transform: uppercase;
+        font-weight: 700;
     }
     .suppr-btn {
-        width: 40%;
+        width: 50%;
         display: block;
         margin: auto;
-        background-color: rgb(235, 1, 1);
+        background-color: #f00909;
         color: white;
         height: 3em;
         border-radius: 10px;
+        border: 1px solid #D4D3E8;
+        box-shadow: 0px 2px 2px black;
+        text-transform: uppercase;
+        font-weight: 700;
     }
     .profil-sep {
         color: rgb(30, 51, 121);

@@ -95,18 +95,17 @@
     }
     .form-btn {
         width: 100%;
-            margin-top: 25px;
-            padding: 16px 20px;
-            background-color: #FD340A;
-            color: white;
-            height: 3.2rem;
-            border-radius: 26px;
-            border: 1px solid #D4D3E8;
-            box-shadow: 0px 2px 2px black;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 18px;
-            font-weight: 700;
+        margin-top: 25px;
+        padding: 16px 20px;
+        background-color: #FD340A;
+        color: white;
+        height: 3.2rem;
+        border-radius: 26px;
+        border: 1px solid #D4D3E8;
+        box-shadow: 0px 2px 2px black;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
     }
     .sign-card {
         font-style: italic;

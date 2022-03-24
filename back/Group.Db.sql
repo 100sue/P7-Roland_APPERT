@@ -63,8 +63,8 @@ CREATE TABLE IF NOT EXISTS `comments` (
 DROP TABLE IF EXISTS `likes`;
 CREATE TABLE IF NOT EXISTS `likes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_utilisateurs` int(11) NOT NULL,
-  `id_publications` int(11) NOT NULL,
+  `utilisateurs_id` int(11) NOT NULL,
+  `id_publications_id` int(11) NOT NULL,
   `vote` varchar(30) NULL,
   PRIMARY KEY (`id`),
   KEY `id_utilisateurs` (`id_utilisateurs`),
