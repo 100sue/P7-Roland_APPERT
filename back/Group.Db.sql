@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `nom` varchar(100) NOT NULL,
   `prenom` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `image` varchar(300) NOT NULL DEFAULT 'http://localhost:3000/images/defaultImages.jpg',
   `isAdmin` tinyint(1) NOT NULL DEFAULT '0',
   
@@ -29,8 +29,8 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 DROP TABLE IF EXISTS `publications`;
 CREATE TABLE IF NOT EXISTS `publications` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `utilisateur_id` int(11) NOT NULL,
-  `message` varchar(300) DEFAULT NULL,
+  `utilisateurs_id` int(11) NOT NULL,
+  `message` varchar(255) DEFAULT NULL,
   `contenu ` text,
   `date_ajout` date NOT NULL,
 
@@ -45,8 +45,8 @@ CREATE TABLE IF NOT EXISTS `publications` (
 DROP TABLE IF EXISTS `comments`;
 CREATE TABLE IF NOT EXISTS `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `utilisateur_id ` int(11) NOT NULL DEFAULT '0',
-  `publication_id` int(11) NOT NULL DEFAULT '0',
+  `utilisateurs_id ` int(11) NOT NULL DEFAULT '0',
+  `publications_id` int(11) NOT NULL DEFAULT '0',
   `date_ajout` date NOT NULL,
   `date_modification` date NOT NULL,
    `message` text NOT NULL,
@@ -63,12 +63,12 @@ CREATE TABLE IF NOT EXISTS `comments` (
 DROP TABLE IF EXISTS `likes`;
 CREATE TABLE IF NOT EXISTS `likes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_utilisateur` int(11) NOT NULL,
-  `id_publication` int(11) NOT NULL,
+  `id_utilisateurs` int(11) NOT NULL,
+  `id_publications` int(11) NOT NULL,
   `vote` varchar(30) NULL,
   PRIMARY KEY (`id`),
-  KEY `id_user` (`id_user`),
+  KEY `id_utilisateurs` (`id_utilisateurs`),
   KEY `FK2_post_id` (`id_post`),
-  CONSTRAINT `FK1_utilisateur_id` FOREIGN KEY (`id_user`) REFERENCES `utilisateur` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK2_post_id` FOREIGN KEY (`id_post`) REFERENCES `posts` (`id`) ON DELETE CASCADE
+  CONSTRAINT `FK1_utilisateurs_id` FOREIGN KEY (`id_utilisateurs`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK2_publications_id` FOREIGN KEY (`id_publications`) REFERENCES `publications` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
