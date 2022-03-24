@@ -1,7 +1,7 @@
 -- Listage de la structure de la base pour groupomania :
 
 DROP DATABASE IF EXISTS `group`;
-CREATE DATABASE IF NOT EXISTS `groupomania` ;
+CREATE DATABASE IF NOT EXISTS `group` ;
 USE `group`;
 
 
