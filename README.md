@@ -87,9 +87,9 @@ Veuillez cloner ce dépôt : il vous fournira les deux dossiers nécessaires : b
    ### Executer l'application : ###
 
 - Vous aurez besoin de deux fenêtres de terminal : une pour le frontend, une pour le backend. 
-- Sur le terminal backend : exécutez "npm install, puis "node server" ou "nodemon server". 
+- Sur le terminal backend : exécutez "npm install, puis "npm run dev". 
 - Le serveur doit fonctionner sur localhost avec le port par défaut 3306. 
-- Puis, sur le terminal frontend : lancez "npm install pour installer tous les plugins nécessaires, puis "npm start". 
+- Puis, sur le terminal frontend : lancez "npm install pour installer tous les plugins nécessaires, puis "npm run dev". 
 - Le frontend de l'application est visible sur http:// localhost: 3000/.
     
     
