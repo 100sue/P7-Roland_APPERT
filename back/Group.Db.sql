@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `prenom` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `image` varchar(300) NOT NULL DEFAULT 'http://localhost:3000/images/defaultImages.jpg',
+  `image` varchar(300) NOT NULL DEFAULT 'http://localhost:3000/images/images.jpg',
   `isAdmin` tinyint(1) NOT NULL DEFAULT '0',
   
   PRIMARY KEY (`id`),
@@ -29,10 +29,10 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 DROP TABLE IF EXISTS `publications`;
 CREATE TABLE IF NOT EXISTS `publications` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `utilisateurs_id` int(11) NOT NULL,
+  `utilisateur_id` int(11) NOT NULL,
   `message` varchar(255) DEFAULT NULL,
   `contenu ` text,
-  `date_ajout` date NOT NULL,
+  `date_ajout` DATETIME NOT NULL,
 
   PRIMARY KEY (`id`),
   KEY `FK_posts_utilisateurs` (`id_utilisateurs`),
@@ -47,8 +47,8 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `utilisateurs_id ` int(11) NOT NULL DEFAULT '0',
   `publications_id` int(11) NOT NULL DEFAULT '0',
-  `date_ajout` date NOT NULL,
-  `date_modification` date NOT NULL,
+  `date_ajout` DATETIME NOT NULL,
+  `date_modification` DATETIME NOT NULL,
    `message` text NOT NULL,
   PRIMARY KEY (`id`),
   KEY `FK2_publications_id` (`publications_id`),
