@@ -49,7 +49,7 @@
                 <p class="post-txt">{{post.message}}</p>
             </div>
             <div class="post-img">
-                <img :src="`http://localhost:3000${post.media}`" title="Image du post" class="wall-img" v-if="post.media">
+                <img :src="`http://localhost:3000/${post.media}`" title="Image du post" class="wall-img" v-if="post.media">
                 <img :src="post.link" title="Image du post" class="wall-img" v-if="post.link && !post.media">
             </div>
             <div class="post-likes">
@@ -122,6 +122,7 @@
 
 
 <script>
+
     export default {
         name: 'Post',
         props: {
@@ -131,7 +132,8 @@
             addComment: Function,
             loadComments: Function,
             commentaires: Array,
-            deleteComment: Function
+            deleteComment: Function,
+            
         },
         data() {
             return {

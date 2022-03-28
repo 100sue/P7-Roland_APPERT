@@ -20,6 +20,7 @@
                         id="addContent"
                         name="image"
                         accept="image/*"
+                        
                     >
                 </div>
                 <button class="post-btn" title="Valider la publication">Publier</button>

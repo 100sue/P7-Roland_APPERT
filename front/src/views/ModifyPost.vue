@@ -32,7 +32,7 @@
                     <form class="post-description" @submit.prevent="updatePost($event)">
                         <input class="post-txt" title="Modifier le message de la publication" v-model="post.message">
                         <div class="post-media">
-                            <img :src="`http://localhost:3000${post.media}`" alt="Image post" class="wall-img" v-if="post.media != 'null'">
+                            <img :src="`http://localhost:3000/${post.media}`" alt="Image post" class="wall-img" v-if="post.media != 'null'">
                             <img :src="post.link" alt="Image post" class="wall-img" v-if="post.link && post.media =='null'">
                         </div>
                         <div class="post-modif">

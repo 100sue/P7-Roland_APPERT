@@ -84,7 +84,7 @@
                         .then(reponse => { console.log(reponse)
                             alert("Inscription réussie ! Veuillez vous connecter pour accéder à votre compte !")
                             localStorage.clear();
-                            this.$router.go(0); 
+                            this.$router.push({ name:'home' });  
                         })
                     .catch((err) => {
                         alert(err.response.data.message)
