@@ -190,8 +190,8 @@
         margin: auto;
         padding: 1% 2% 1% 2%;
         background: #f1f1f1;
-        border-radius: 2px;
-        box-shadow: 0 0 20px #000000b3;
+        border: 2px solid #333;
+        box-shadow: 0px 3px 3px #333;
         box-sizing: border-box;
         margin-bottom: 3%;
     }

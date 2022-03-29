@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`),
   KEY `FK_utilisateurs_authority` (`isAdmin`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT= DEFAULT CHARSET=utf8;
 
 
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `publications` (
   PRIMARY KEY (`id`),
   KEY `FK_posts_utilisateurs` (`id_utilisateurs`),
   CONSTRAINT `FK_posts_utilisateurs` FOREIGN KEY (`id_utilisateurs`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT= DEFAULT CHARSET=utf8;
 
 
 -- Listage de la structure de la table group.commentaires :
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
   KEY `FK1_utilisateurs_id` (`utilisateurs_id`),
   CONSTRAINT `FK1_id_utilisateurs` FOREIGN KEY (`utilisateurs_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE,
   CONSTRAINT `FK2_publications_id` FOREIGN KEY (`publications_id`) REFERENCES `publications` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT= DEFAULT CHARSET=utf8;
 
 
 -- Listage de la structure de la table group.likes :
@@ -71,4 +71,4 @@ CREATE TABLE IF NOT EXISTS `likes` (
   KEY `FK2_post_id` (`id_post`),
   CONSTRAINT `FK1_utilisateurs_id` FOREIGN KEY (`id_utilisateurs`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE,
   CONSTRAINT `FK2_publications_id` FOREIGN KEY (`id_publications`) REFERENCES `publications` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT= DEFAULT CHARSET=utf8;
