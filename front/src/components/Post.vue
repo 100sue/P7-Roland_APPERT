@@ -129,7 +129,7 @@ import vClickOutside from 'click-outside-vue3'
     },
         name: 'Post',
         props: {
-            post: Object,
+            post: {},
             deletePost: Function,
             addLike: Function,
             addComment: Function,
