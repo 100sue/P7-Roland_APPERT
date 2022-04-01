@@ -55,8 +55,8 @@ DROP TABLE IF EXISTS `likes`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `likes` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `id_utilisateur` int NOT NULL,
-  `id_publication` int NOT NULL,
+  `utilisateur_id` int NOT NULL,
+  `publication_id` int NOT NULL,
   `vote` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `utilisateur_id_idx` (`id_utilisateur`),

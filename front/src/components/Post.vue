@@ -20,7 +20,7 @@
             <div class="dropdown" v-if="post.editable">
                 <button 
                     @click="menuActive = !menuActive" 
-                    v-click-outside="clickOutside" 
+                    v-click-outside="onClickOutside" 
                     class="dropdown-btn"
                     title="Options"
                 >
@@ -53,7 +53,7 @@
                 <img :src="post.link" title="Image du post" class="wall-img" v-if="post.link && !post.media">
             </div>
             <div class="post-likes">
-                <img src="../assets/pouce.png" title="Likes" class="wall-likes">
+                <img src="http://localhost:3000/src/assets/pouce.png" title="Likes" class="wall-likes">
                 <p>{{post.likes}}</p>
             </div>
         </div>
@@ -88,7 +88,7 @@
                     <button 
                         :data-id="commentaire.id"
                         @click="menuActiveComments = {...menuActiveComments, [commentaire.id]:!menuActiveComments[commentaire.id]}" 
-                        v-click-outside="clickOutsideComment" 
+                        v-click-outside="onClickOutsideComment" 
                         class="dropdown-btn-comments"
                         title="Option"
                     >
@@ -129,7 +129,7 @@ import vClickOutside from 'click-outside-vue3'
     },
         name: 'Post',
         props: {
-            post: {},
+            post: Object,
             deletePost: Function,
             addLike: Function,
             addComment: Function,
@@ -151,12 +151,13 @@ import vClickOutside from 'click-outside-vue3'
             }
         },
         methods: {
+            
             // Fonction fermant automatiquement la partie option de post dès lors que l'utilisateur click au délà des boutons modifier et supprimer 
-            clickOutside() {
+            onClickOutside() {
                 this.menuActive = false
             },
             // Fonction fermant automatiquement la partie option  de commentaire dès lors que l'utilisateur click au délà du bouton supprimer 
-            clickOutsideComment(event, el) {
+            onClickOutsideComment(event, el) {
                 const id = el.dataset['id'];
                 this.menuActiveComments = {...this.menuActiveComments, [id]:false};
             },
