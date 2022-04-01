@@ -53,7 +53,7 @@
                 <img :src="post.link" title="Image du post" class="wall-img" v-if="post.link && !post.media">
             </div>
             <div class="post-likes">
-                <img src="http://localhost:3000/src/assets/pouce.png" title="Likes" class="wall-likes">
+                <img src="../assets/pouce.png" title="Likes" class="wall-likes">
                 <p>{{post.likes}}</p>
             </div>
         </div>
@@ -129,7 +129,7 @@ import vClickOutside from 'click-outside-vue3'
     },
         name: 'Post',
         props: {
-            post: Object,
+            post: {},
             deletePost: Function,
             addLike: Function,
             addComment: Function,
