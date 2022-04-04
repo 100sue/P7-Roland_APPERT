@@ -22,7 +22,7 @@
 
 
 <script>
-    export default {
+export default {
         name: 'HeaderWall',
         methods: {
             deconnexion() {
@@ -35,46 +35,46 @@
 
 
 <style scoped>
-    header {
+header {
         height: 60px;
         margin: auto;
-    }
-    nav {
+}
+nav {
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
-    }
-    .logo-header {
+}
+.logo-header {
         margin-right: 35%;
         margin-left: 3%;
-    }
-    .logo-img {
+}
+.logo-img {
        height: 60px;
-    }
-    .users-header, .profil-header, .deconnect-header {
+}
+.users-header, .profil-header, .deconnect-header {
         margin-right: 3%;
-    }
-    i {
+}
+i {
         font-size: 1.5em;
         color: #2551e2;
         transition: transform .5s;
-    }
-    i:hover {
+}
+i:hover {
         border-radius: 100%;
         transform: rotate(360deg);
-    }
-    /* Small device (smartphone, to 767px max) */
-    @media screen and (max-width: 767px) {
-        nav {
+}
+/* Small device (smartphone, to 767px max) */
+@media screen and (max-width: 767px) {
+nav {
             padding-top: 2%;
-        }
-        .logo-header {
+}
+.logo-header {
             margin-right: 10%;
             margin-left: 3%;
-        }
-        .logo-img {
+}
+.logo-img {
             height: 45px;
-        }
-    }
+}
+}
 </style>

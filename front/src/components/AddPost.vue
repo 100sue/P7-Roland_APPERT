@@ -32,9 +32,9 @@
 
 
 <script>
-    export default {
-        name: 'AddPost',
-        props: {
+export default {
+     name: 'AddPost',
+     props: {
             createPost: Function
         },
         data() {
@@ -74,50 +74,50 @@
 
 
 <style scoped> 
-    .post-container {
+.post-container {
         width: 50%;
         margin: auto;
         height: auto;
         margin-bottom: 3%;
-    }  
-    .post-card {
+}  
+.post-card {
         box-shadow: 0 0 20px #000000b3;
         background: #315EF0;
         border-radius: 5px;
-    }  
-    .hidden {
+}  
+.hidden {
         display: none;
-    }
-    h1 {
+}
+h1 {
         padding-top: 2%;
         padding-left: 4%;
         color: white;
-    }
-    .post-infos {
+}
+.post-infos {
         text-align: center;
-    }
-    textarea {
+}
+textarea {
         width: 90%;
         height: 5em;
         padding: 1%;
         margin-bottom: 2%;
         resize: none;
-    }
-    .post-content {
+}
+.post-content {
         display: flex;
         justify-content: space-between;
-    }
-    .post-input {
+}
+.post-input {
         width: 40%;
         margin-left: 4%;
         margin-bottom: 2%;
         padding: 1%;
         background: #819bee;
-    }
-    .post-img > input {
+}
+.post-img > input {
         display: none;
-    }
-    .post-img {
+}
+.post-img {
         width: 10%;
         font-size: 1.5em;
         justify-content: center;
@@ -126,11 +126,11 @@
         padding-top: 2%;
         color: white;
         transition: transform .2s;
-    }
-    .post-img:hover {
+}
+.post-img:hover {
         transform: scale(1.1);
-    }
-    .post-btn {
+}
+.post-btn {
         margin-right: 4%;
         margin-bottom: 2%;
         width: 40%;
@@ -141,18 +141,18 @@
         color: white;
         height: 3em;
         border-radius: 10px;
-    }
-    /* Medium devices (tablets, 768px and up) */
-    @media screen and (max-width: 1023px) {
-        .post-container {
+}
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 1023px) {
+.post-container {
             width: 60%;
         }
-    } 
-    /* Small device (smartphone, to 767px max) */
-    @media screen and (max-width: 767px) {
-        .post-container {
+ } 
+/* Small device (smartphone, to 767px max) */
+@media screen and (max-width: 767px) {
+.post-container {
             width: 80%;
             margin-bottom: 8%;
-        }
     }
+}
 </style>

@@ -122,7 +122,7 @@
 
 
 <script>
-    export default {
+export default {
         name: 'Post',
         props: {
             post: Object,
@@ -179,13 +179,13 @@
                 this.commentData.message = "" 
             }
         }
-    }
+}
 </script>
 
 
 <style scoped>
     
-    .wall-card {
+.wall-card {
         width: 50%;
         margin: auto;
         padding: 1% 2% 1% 2%;
@@ -194,81 +194,81 @@
         box-shadow: 0px 3px 3px #333;
         box-sizing: border-box;
         margin-bottom: 3%;
-    }
-    .post-card-header {
+}
+.post-card-header {
         display: flex;
         align-items: center;
-    }
-    .post-header-pic-round {
+}
+.post-header-pic-round {
         border-radius: 50% !important;
         height: 50px;
         width: 50px
-    }
-    #post-pic-default {
+}
+#post-pic-default {
         font-size: 50px;
         color: rgb(30, 51, 121);
-    }
-    .post-header-name-date {
+}
+.post-header-name-date {
         margin-left: 5%;
-    }
-    .post-header-name {
+}
+.post-header-name {
         font-size: 1.1em;
         font-weight: bold;
-    }
-    .post-header-date {
+}
+.post-header-date {
         color:rgb(88, 88, 88);
-    }
-    .post-content {
+}
+.post-content {
         margin: auto;
-    }
-    .wall-img {
+}
+.wall-img {
         width: 100%;
-    }
-    .post-likes {
+}
+.post-likes {
         display: flex;
         align-items: center;
         margin-left: 5%;
-    }
-    .post-likes img {
+}
+.post-likes img {
         width: 5%;
         height: 5%;
         margin-right: 1%;
-    }
-    .card-sep {
+}
+.card-sep {
         color: rgb(30, 51, 121);
-    }
-    .post-actions {
+}
+.post-actions {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    #icon-like, #icon-comment {
+}
+#icon-like, #icon-comment {
         transition: transform .2s;
-    }
-    #icon-like:hover, #icon-comment:hover {
+}
+#icon-like:hover, #icon-comment:hover {
         transform: scale(1.3);
-    }
-    .post-action-like {
+}
+.post-action-like {
         margin-left: 20%;
         display: flex;
-    }
-    .post-action-comment {
+}
+.post-action-comment {
         margin-right: 20%;
         display: flex;
-    }
-    .post-action-like, .post-action-comment {
+}
+.post-action-like, .post-action-comment {
         width: 20%;
-    }
-    .like-txt, .comment-txt {
+}
+.like-txt, .comment-txt {
         margin-left: 10%;
-    }
-    .comment-auth {
+}
+.comment-auth {
         display: flex;
         flex-direction: row;
         margin-top: 3%;
         margin-bottom: 1%;
-    }
-    .comment-user {
+}
+.comment-user {
         display: flex;
         flex-direction: column;
         margin-left: 2%;
@@ -277,48 +277,48 @@
         background-color: rgb(219, 222, 226);
         height: 50px;
         line-height: 0.8;
-    }
-    .comment-user-name {
+}
+.comment-user-name {
         font-weight: bold;
-    }
-    .comment-pic-round {
+}
+.comment-pic-round {
         border-radius: 50% !important;
         height: 50px;
         width: 50px;
-    }
-    #comment-pic-default {
+}
+#comment-pic-default {
         font-size: 50px;
         color: rgb(30, 51, 121);
-    }
-    .com-input {
+}
+.com-input {
         width: 97%;
         height: 3em;
         padding: 1%;
         margin-top: 2%;
         margin-bottom: 2%;
         border-radius: 5px;
-    }
-    .com-input:focus {
+}
+.com-input:focus {
         color: #495057;
         background-color: #fff;
         border-color: rgb(30, 51, 121);
         outline: 0;
         box-shadow: none;
-    }
+}
 /* Boutons options de post */
-    .dropdown {
+.dropdown {
         margin-left: auto;
         position: relative;
         display: flex;
-    }
-    .dropdown-btn {
+}
+.dropdown-btn {
         color: black;
         padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
-    }
-    .dropdown-content {
+}
+.dropdown-content {
         background-color: #f1f1f1;
         border-radius: 5px;
         min-width: 200px;
@@ -327,25 +327,25 @@
         position: absolute;
         top: 55px;
         right: 10px;
-    }
-    .dropdown-options {
+}
+.dropdown-options {
         margin: 3%;
         font-weight: bold;
-    }
+}
 /* Boutons options commentaires */
-    .dropdown-comments {
+.dropdown-comments {
         margin-left: auto;
         position: relative;
         display: flex;
-    }
-    .dropdown-btn-comments {
+}
+.dropdown-btn-comments {
         color: black;
         padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
-    }
-    .dropdown-content-comments {
+}
+.dropdown-content-comments {
         background-color: #f1f1f1;
         border-radius: 5px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -353,10 +353,10 @@
         position: absolute;
         top: 10px;
         right: 40px;
-    }
-    .dropdown-options-comments {
+}
+.dropdown-options-comments {
         margin: 3%;
         font-weight: bold;
-    }
+}
     
 </style>

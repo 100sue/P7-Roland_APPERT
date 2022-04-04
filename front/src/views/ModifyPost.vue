@@ -57,9 +57,10 @@
 
 
 <script>
-    import axios from 'axios'
-    import HeaderWall from '../components/HeaderWall.vue'
-    export default {
+import axios from 'axios'
+import HeaderWall from '../components/HeaderWall.vue'
+
+ export default {
         name: 'ModifyPost',
         components: {
             HeaderWall
@@ -128,20 +129,21 @@
                 })
             }
         }
-    }
+}
+
 </script>
 
 
 <style scoped>
-    .modify-bck {
+.modify-bck {
         background-attachment: fixed;
         background-image: url("../assets/test2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: auto;
         padding: 3%;
-    }
-    .modify-card {
+}
+.modify-card {
         width: 50%;
         margin: auto;
         padding: 1% 2% 1% 2%;
@@ -150,62 +152,62 @@
         box-shadow: 0 0 20px #000000b3;
         box-sizing: border-box;
         margin-bottom: 3%;
-    }
-    .post-card-header {
+}
+.post-card-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    .post-header-pic-round {
+}
+.post-header-pic-round {
         border-radius: 50% !important;
         height: 50px;
         width: 50px
-    }
-    #post-pic-modify-default {
+}
+#post-pic-modify-default {
         font-size: 50px;
         color: rgb(30, 51, 121);
-    }
-    .post-header-name-date {
+}
+.post-header-name-date {
         margin-left: 5%;
-    }
-    .post-header-name {
+}
+.post-header-name {
         font-size: 1.1em;
         font-weight: bold;
-    }
-    .post-header-date {
+}
+.post-header-date {
         color:rgb(88, 88, 88);
-    }
-    .btn-annuler {
+}
+.btn-annuler {
         border: none;
         font-size: 1.5em;
         color: rgb(30, 51, 121);
-    }
-    .btn-annuler :hover {
+}
+.btn-annuler :hover {
         color: red;
-    }
-    .post-txt {
+}
+.post-txt {
         width: 98%;
         margin-bottom: 3%;
         padding-bottom: 5%;
-    }
-    .post-media {
+}
+.post-media {
         margin-bottom: 1%;
-    }
-    .wall-img {
+}
+.wall-img {
         width: 100%;
-    }
-    .post-infos {
+}
+.post-infos {
         text-align: center;
-    }
-    .post-input {
+}
+.post-input {
         width: 45%;
         margin-bottom: 2%;
         padding: 1%;
-    }
-    .post-img > input {
+}
+.post-img > input {
         display: none;
-    }
-    .post-img {
+}
+.post-img {
         width: 10%;
         font-size: 1.5em;
         justify-content: center;
@@ -214,35 +216,35 @@
         padding-top: 1%;
         color: rgb(30, 51, 121);
         transition: transform .3s;
-    }
-    .post-img:hover {
+}
+.post-img:hover {
         transform: scale(1.1);
-    }
-    .post-modif {
+}
+.post-modif {
         display: flex;
         width: 100%;
         margin-top: 3%;
-    }
-    .post-btn {
+}
+.post-btn {
         margin-bottom: 2%;
         width: 45%;
         background-color: rgb(49, 94, 240);
         color: white;
         height: 3em;
         border-radius: 10px;
-    }
-    /* Medium devices (tablets, 768px and up) */
-    @media screen and (max-width: 1023px) {
-        .modify-card {
+}
+/* Medium devices (tablets, 768px and up) */
+ @media screen and (max-width: 1023px) {
+.modify-card {
             width: 60%;
             margin-top: 3%;
         }
-    } 
-    /* Small device (smartphone, to 767px max) */
-    @media screen and (max-width: 767px) {
-        .modify-card {
+} 
+/* Small device (smartphone, to 767px max) */
+@media screen and (max-width: 767px) {
+.modify-card {
             width: 80%;
             margin-top: 5%;
         }
-    }
+}
 </style>

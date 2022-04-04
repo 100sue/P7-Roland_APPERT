@@ -27,8 +27,9 @@
 
 
 <script>
-    import axios from 'axios'; 
-    export default {
+import axios from 'axios'; 
+
+export default {
         name: 'Login',
         props: {
             changeForm: Function 
@@ -60,40 +61,39 @@
                 });    
             }  
         },
-    }
-    
+} 
 </script>
 
 
 <style scoped>
-    * {
+* {
         font-family: 'Titillium Web', sans-serif;
         background-color: #315EF0;
         border-radius: 5px;
-    }
-    .login-container {
+}
+.login-container {
         padding: 0.5%;
         border: 2px solid #333;
         box-shadow: 0px 3px 3px #333;
-    }
-    h1 {
+}
+ h1 {
         text-align: center;
         font-size: 2em;
         color: white;
-    }
-    .form-card {
+}
+.form-card {
         margin-left: 5%;
         margin-right: 5%;
-    }
-    .form-group {
+}
+.form-group {
         display: flex;
         flex-direction: column;
-    }
-    input {
+}
+input {
         margin-bottom: 6%;
         height: 2.2rem;
-    }
-    .form-btn {
+}
+.form-btn {
         width: 100%;
         margin-top: 25px;
         padding: 16px 20px;
@@ -106,19 +106,19 @@
         text-transform: uppercase;
         font-weight: 700;
         font-size: 18px;
-    }
-    .sign-card {
+}
+.sign-card {
         font-style: italic;
         text-align: center;
         color: white;
-    }
-    .sign-card a {
+}
+.sign-card a {
         text-decoration: none;
-    }
-    /* Small device (smartphone, to 767px max) */
-    @media screen and (max-width: 767px) {
-        h1 {
-            font-size: 1.5em;
-        } 
-    }
+}
+/* Small device (smartphone, to 767px max) */
+ @media screen and (max-width: 767px) {
+h1 {
+        font-size: 1.5em;
+    } 
+}
 </style>

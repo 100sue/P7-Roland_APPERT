@@ -73,9 +73,10 @@
 
 
 <script>
-    import HeaderWall from '../components/HeaderWall.vue'
-    import axios from 'axios'
-    export default {
+import HeaderWall from '../components/HeaderWall.vue'
+import axios from 'axios'
+
+export default {
         name: 'Profil',
         components: {
             HeaderWall,
@@ -168,20 +169,21 @@
                 });
             },
         }
-    }
+}
+
 </script>  
 
 
 <style scoped>
-    .main-profil {
+.main-profil {
         background-attachment: fixed;
         background-image: url("../assets/test2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
         padding: 3%;
-    }
-    .profil-card {
+}
+.profil-card {
         width: 30%;
         height: auto;
         margin: auto;
@@ -191,65 +193,65 @@
         box-sizing: border-box;
         border: 2px solid #333;
         box-shadow: 0px 3px 3px #333;
-    }
-    .profil-avatar {
+}
+.profil-avatar {
         width: 50px;
         height: 50px;
-    }
-    #profil-avatar-icon {  
+ }
+#profil-avatar-icon {  
         font-size: 3em;
         color: #FD340A;
-    }
-    #profil-avatar-img {
+}
+#profil-avatar-img {
         height: 50px;
         width: 50px;
         border-radius: 50% !important;
         box-shadow: 0 0 3px #000000b3;
-    }
-    .profil-avatar-btn {
+}
+.profil-avatar-btn {
         margin-top: 15%;
         background-color: #315EF0;
         border-radius: 10px;
          color: white;
-    }
-    .profil-pic-form > input {
+}
+.profil-pic-form > input {
         display: none;
 
-    }
-    .profil-pic-form {
+}
+.profil-pic-form {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .container {
+}
+.container {
         overflow: hidden;
         margin: 0;
-    }
-    .profil-pic-name {
+}
+.profil-pic-name {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 2%;
         margin-bottom: 3%;
-    }
-    .profil-name {
+}
+.profil-name {
         margin-left: 5%;
-    }
-    .profil-informations {
+}
+.profil-informations {
         width: 80%;
         margin: auto;
         padding-top: 3%;
         padding-bottom: 3%;
-    }
-    .form-group {
+}
+.form-group {
         display: flex;
         flex-direction: column;
-    }
-    input {
+}
+input {
         margin-bottom: 6%;
         height: 2.2rem;
-    }
-    .form-btn {
+}
+.form-btn {
         width: 100%;
         margin-top: 3%;
         background-color: rgb(49, 94, 240);
@@ -260,8 +262,8 @@
         box-shadow: 0px 2px 2px black;
         text-transform: uppercase;
         font-weight: 700;
-    }
-    .suppr-btn {
+}
+.suppr-btn {
         width: 50%;
         display: block;
         margin: auto;
@@ -273,23 +275,24 @@
         box-shadow: 0px 2px 2px black;
         text-transform: uppercase;
         font-weight: 700;
-    }
-    .profil-sep {
+}
+.profil-sep {
         color: rgb(30, 51, 121);
         margin: 3%;
-    }
-    /* Medium devices (tablets, 768px and up) */
-    @media screen and (max-width: 1023px) {
-        .profil-card {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 1023px) {
+.profil-card {
             width: 50%;
             margin-top: 3%;
         }
-    } 
-    /* Small device (smartphone, to 767px max) */
-    @media screen and (max-width: 767px) {
-        .profil-card {
+} 
+/* Small device (smartphone, to 767px max) */
+@media screen and (max-width: 767px) {
+.profil-card {
             width: 80%;
             margin-top: 5%;
         }
-    }
+}
 </style>

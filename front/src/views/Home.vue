@@ -23,10 +23,10 @@
 
 
 <script>
-    import HeaderHome from '../components/HeaderHome.vue'
-    import Login from '../components/Login.vue'
-    import SignUp from'../components/SignUp.vue'
-    export default {
+import HeaderHome from '../components/HeaderHome.vue'
+import Login from '../components/Login.vue'
+import SignUp from'../components/SignUp.vue'
+export default {
         name: 'Home',
         components: {
             Login,
@@ -44,34 +44,34 @@
                 this.registerForm = registerForm
             },
         }
-    }
+ }
 </script>
 
 
 <style scoped>
-    * {
+* {
         font-family: 'Titillium Web', sans-serif;
-    }
-    .container {
+}
+.container {
         overflow: hidden;
-    }
-    .main-hero {
+ }
+.main-hero {
         background-image: url("../assets/test2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 80vh;
         padding: 5%;
-    }
-    .register-card {
+}
+.register-card {
         width: 40%;
         height: 60%;
         margin: auto;
-    }
-    .register-card-btn {
+}
+.register-card-btn {
         display: flex;
         padding-bottom: 3%;
-    }
-    button {
+}
+button {
         width: 50%;
         padding: 2%;
         font-size: 18px;
@@ -83,12 +83,12 @@
         text-align: center;
         position: relative;
         transition: all .35s;
-    }
-    button span {
+}
+button span {
         position: relative;
         z-index: 2;
-    }
-    button:after {
+}
+button:after {
         position: absolute;
         content: "";
         top: 0;
@@ -97,30 +97,30 @@
         height: 100%;
         background: rgb(49, 94, 240);
         transition: all .35s;
-    }
-    button:hover {
+}
+button:hover {
         color: #fff;
-    }
-    button:hover:after {
+}
+button:hover:after {
         width: 100%;
-    }
-    .active {
+}
+.active {
         background: rgb(49, 94, 240);
         color: white;
-    }
-    /* Medium devices (tablets, 768px and up) */
-    @media screen and (max-width: 1023px) {
-        .register-card {
+}
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 1023px) {
+.register-card {
             width: 60%;
         }
-    } 
-    /* Small device (smartphone, to 767px max) */
-    @media screen and (max-width: 767px) {
-        .register-card {
+} 
+/* Small device (smartphone, to 767px max) */
+@media screen and (max-width: 767px) {
+.register-card {
             width: 80%;
-        }
-        button {
+}
+button {
             font-size: 10px;
         }
-    }
+}
 </style>

@@ -17,8 +17,7 @@ app.directive('click-outside', {
         unbind: function (el) {
           document.body.removeEventListener('click', el.clickOutsideEvent)
         },
-        
-      });
+});
 
 
 app.use(router)

@@ -9,22 +9,22 @@
 
 
 <script>
-    export default {
+export default {
         name: 'HeaderHome'
-    }
+}
 </script> 
 
 
 <style>
-    header {
+header {
         height: 60px;
-    }
-    .logo-header {
+}
+.logo-header {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .logo-img {
+}
+.logo-img {
        height: 60px;
-    }
+}
 </style>
