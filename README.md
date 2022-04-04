@@ -53,7 +53,7 @@ Voici, les exigences du comité de direction :
 
 L'utilisateur “lambda” doit pouvoir :
 
-- créer un compte avec : nom - prénom - email - mot de passe ⇒ Le réseau étant interne seul une adresse groupomania.com sera accepté.
+- créer un compte avec : nom - prénom - email - mot de passe.
 - Se logger à partir de son email & mot de passe.
 - Ajouter un avatar (et une description à son profil).
 - L’utilisateur doit pouvoir poster un texte et/ou une image ou un lien.
