@@ -8,11 +8,9 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
-    "click-outside-vue3": "^4.0.1",
     "core-js": "^3.21.1",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.12",
-    "vuex": "^4.0.2"
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.2",

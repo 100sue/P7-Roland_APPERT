@@ -122,14 +122,10 @@
 
 
 <script>
-import vClickOutside from 'click-outside-vue3'
     export default {
-        directives: {
-      clickOutside: vClickOutside.directive
-    },
         name: 'Post',
         props: {
-            post: {},
+            post: Object,
             deletePost: Function,
             addLike: Function,
             addComment: Function,
