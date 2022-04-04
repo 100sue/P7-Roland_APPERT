@@ -20,7 +20,7 @@
             <div class="dropdown" v-if="post.editable">
                 <button 
                     @click="menuActive = !menuActive" 
-                    v-click-outside="onClickOutside" 
+                    v-click-outside="ClickOutside" 
                     class="dropdown-btn"
                     title="Options"
                 >
@@ -88,7 +88,7 @@
                     <button 
                         :data-id="commentaire.id"
                         @click="menuActiveComments = {...menuActiveComments, [commentaire.id]:!menuActiveComments[commentaire.id]}" 
-                        v-click-outside="onClickOutsideComment" 
+                        v-click-outside="ClickOutsideComment" 
                         class="dropdown-btn-comments"
                         title="Option"
                     >
@@ -149,11 +149,11 @@
         methods: {
             
             // Fonction fermant automatiquement la partie option de post dès lors que l'utilisateur click au délà des boutons modifier et supprimer 
-            onClickOutside() {
+            ClickOutside() {
                 this.menuActive = false
             },
             // Fonction fermant automatiquement la partie option  de commentaire dès lors que l'utilisateur click au délà du bouton supprimer 
-            onClickOutsideComment(event, el) {
+            ClickOutsideComment(event, el) {
                 const id = el.dataset['id'];
                 this.menuActiveComments = {...this.menuActiveComments, [id]:false};
             },
