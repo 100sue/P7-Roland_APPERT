@@ -53,12 +53,15 @@ Voici, les exigences du comité de direction :
 
 L'utilisateur “lambda” doit pouvoir :
 
-- créer un compte avec : nom - prénom - email - mot de passe ⇒ Le réseau étant interne seul une adresse groupomania.com sera accepté.
+- créer un compte avec : nom - prénom - email - mot de passe.
 - Se logger à partir de son email & mot de passe.
 - Ajouter un avatar (et une description à son profil).
 - L’utilisateur doit pouvoir poster un texte et/ou une image ou un lien.
 - L’utilisateur doit pouvoir modifier ou supprimer son post.
-- L’utilisateur doit pouvoir voir les posts des autres utilisateurs et retrouver simplement un post : 1. Option A : Faire apparaitre les posts du plus récent au plus anciens 2. Option B : thématique de post 3.Option C : Intégration d’un bloc “ mes posts commentés”.
+- L’utilisateur doit pouvoir voir les posts des autres utilisateurs et retrouver simplement un post : 
+1. Option A : Faire apparaitre les posts du plus récent au plus anciens 
+2. Option B : thématique de post 
+3. Option C : Intégration d’un bloc “ mes posts commentés”.
 - L’utilisateur doit pouvoir liker un post.
 - L’utilisateur doit pouvoir commenter un post.
 
@@ -80,7 +83,7 @@ Veuillez cloner ce dépôt : il vous fournira les deux dossiers nécessaires : b
 - Accès à la base de données :
 
 - Vous devez avoir MySQL installé sur votre ordinateur. Cette application utilise le plugin dotenv pour masquer les données de connexion. 
-- Dans le dossier backend, vous trouverez un fichier ".env__", qui vous donnera accès à la base de données MySQL groupomania. 
+- Dans le dossier backend, vous trouverez un fichier ".env__", qui vous donnera accès à la base de données MySQL de groupomania. 
 - Veuillez d’abord créer dans MySQL une base de données, un utilisateur avec son mot de passe qui aura accès à cette base de données.
 - Puis remplissez avec les valeurs correctes pour les variables "DB_DATABASE", "DB_USER" et "DB_PASS", dans le ficher ".env__" et changez son nom en ".env".
 
