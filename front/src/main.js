@@ -1,11 +1,9 @@
-import { createApp, h } from "vue";
+import { createApp} from "vue";
 import App from "./App.vue";
 import router from "./router";
 
 
-const app = createApp({ 
-  render: () => h(App) 
-});
+const app = createApp(App)
 
 app.directive("click-outside", {
   mounted(el, binding, vnode) {
@@ -16,7 +14,7 @@ app.directive("click-outside", {
     };
     document.body.addEventListener("click", el.clickOutsideEvent);
   },
-  unbind: function (el) {
+  unmounted: function (el) {
     document.body.removeEventListener("click", el.clickOutsideEvent);
   },
 });

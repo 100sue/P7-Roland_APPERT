@@ -189,11 +189,11 @@ export default {
     };
   },
   methods: {
-    // Fonction fermant automatiquement la partie option de post dès lors que l'utilisateur click au délà des boutons modifier et supprimer
+    // Fonction fermant automatiquement la partie option de post, dès lors que l'utilisateur click au delà des boutons modifier et supprimer
     ClickOutside() {
       this.menuActive = false;
     },
-    // Fonction fermant automatiquement la partie option  de commentaire dès lors que l'utilisateur click au délà du bouton supprimer
+    // Fonction fermant automatiquement la partie option des commentaires, dès lors que l'utilisateur click au delà du bouton supprimer.
     ClickOutsideComment(event, el) {
       const id = el.dataset["id"];
       this.menuActiveComments = { ...this.menuActiveComments, [id]: false };
@@ -210,19 +210,19 @@ export default {
       };
       return event.toLocaleDateString("fr-Fr", options);
     },
-    // Redirection vers la page dédiée à la modification de post
+    // Redirection vers la page dédiée à la modification de post:
     updatePost() {
       this.$router.push({ name: "ModifyPost", params: { id: this.post.id } });
     },
-    // Bouton permettant d'afficher la partie commentaires
+    // Bouton permettant d'afficher la partie commentaire:
     showComment(postId) {
       this.reveleComment = true;
       this.loadComments(postId);
     },
-    // Fonction d'ajout de commentaire
+    // Fonction d'ajout de commentaire :
+    // Puis, clean de l'input une fois le commentaire ajouté
     submitComment() {
       this.addComment(this.post.id, this.commentData.message);
-      // Clean de l'input une fois le commentaire ajouté
       this.commentData.message = "";
     },
   },

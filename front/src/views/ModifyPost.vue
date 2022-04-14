@@ -96,7 +96,8 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from "axios";o
+
 import HeaderWall from "../components/HeaderWall.vue";
 
 export default {
