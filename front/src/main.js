@@ -1,4 +1,4 @@
-import { createApp} from "vue";
+import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 
@@ -6,10 +6,10 @@ import router from "./router";
 const app = createApp(App)
 
 app.directive("click-outside", {
-  mounted(el, binding, vnode) {
+  mounted(el, binding) {
     el.clickOutsideEvent = function (event) {
       if (!(el == event.target || el.contains(event.target))) {
-        vnode.context[binding.expression](event, el);
+        binding.value(event, el);
       }
     };
     document.body.addEventListener("click", el.clickOutsideEvent);
