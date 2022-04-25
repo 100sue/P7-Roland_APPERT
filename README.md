@@ -118,17 +118,13 @@ Pour l'Utilisation de l'application :
 
   ## This is an exercice as part of my developer training for OpenClassrooms : ##
 
-Tools used for this project : HTML5, CSS3,JavaScript, Node.js, Vue.js, Express, SQL & MySQL, Git & Github, CRUD Operations, OWASP & RGPD Standards.
-
-I also used a lot of depencies like : Bcrypt, Dotenv, Helmet, Jsonwebtoken, Multer, Password-validator.
-
 
 GROUPOMANIA
 
 As a new develloper of the company, I have to set up an internal social network in order to allow a better cohesion within the Groupomania group. I was given carte blanche to set up the back-end and the front-end with the objective to develloper an application close to Reddit or 9GAG.
 Context:
 
-Here are the requirements of the management committee:
+## Here are the requirements of the management committee: ##
 
    the presentation of the functionalities must be simple;
     the creation of an account must be simple and possible from a cell phone;
@@ -140,7 +136,7 @@ Here are the requirements of the management committee:
     The connection data must be secure
     The project must be inclusive by respecting the WACG standards
 
-Functional reflections on the User & Moderation part
+## Functional reflections on the User & Moderation part: ##
 
    Lambda" user must be able to :
         create an account with : name - first name - email - password ⇒ The network being internal only a groupomania.com address will be accepted
@@ -148,7 +144,10 @@ Functional reflections on the User & Moderation part
         Add an avatar (and a description to his profile)
         The user must be able to post a text and/or an image or a link
         User must be able to edit or delete their post
-        The user must be able to see the posts of other users and easily find a post: 1. Option A: Display the posts from the most recent to the oldest 2. Option B : Post theme 3.option C : Integration of a block "my commented posts
+        The user must be able to see the posts of other users and easily find a post: 
+        1. Option A: Display the posts from the most recent to the oldest 
+        2. Option B : Post theme 3.option 
+        C : Integration of a block "my commented posts
         The user must be able to like a post
         The user must be able to comment a post
 
@@ -158,7 +157,7 @@ Functional reflections on the User & Moderation part
         delete a comment
         Comment on a post
 
-Technologies, software, languages, frameworks, plugins used :
+## Technologies, software, languages, frameworks, plugins used : ##
 
 - HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, SQL & MySQL, CRUD Operations, OWASP & RGPD Standards.
 - Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, Password-validator.
