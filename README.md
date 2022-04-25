@@ -138,20 +138,22 @@ Context:
 
 ## Functional reflections on the User & Moderation part: ##
 
-   Lambda" user must be able to :
-        create an account with : name - first name - email - password ⇒ The network being internal only a groupomania.com address will be accepted
-        Log in with his email & password
-        Add an avatar (and a description to his profile)
-        The user must be able to post a text and/or an image or a link
-        User must be able to edit or delete their post
-        The user must be able to see the posts of other users and easily find a post: 
-        1. Option A: Display the posts from the most recent to the oldest 
-        2. Option B : Post theme 3.option 
-        C : Integration of a block "my commented posts
+Lambda" user must be able to :
+         create an account with : name - first name - email - password ⇒ The network being internal only a groupomania.com address will be accepted
+         Log in with his email & password
+         Add an avatar (and a description to his profile)
+         The user must be able to post a text and/or an image or a link
+         User must be able to edit or delete their post.
+        
+        
+ The user must be able to see the posts of other users and easily find a post: 
+       -  Option A: Display the posts from the most recent to the oldest 
+       -  Option B : Post theme 3.option 
+       -  Option C : Integration of a block "my commented posts
         The user must be able to like a post
         The user must be able to comment a post
 
-   The moderator must be able to:
+ The moderator must be able to:
         create a post
         delete a post
         delete a comment
