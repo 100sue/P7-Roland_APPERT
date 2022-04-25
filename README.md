@@ -165,7 +165,8 @@ The user must be able to comment a post.
 - Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, Password-validator.
 
 <br>
-## Front-end : How to make this project work.
+
+## Front-end : How to make this project work. ##
 
 This template should help get you started developing with Vue 3 in Vite.
 
