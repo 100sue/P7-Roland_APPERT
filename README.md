@@ -130,7 +130,7 @@ Context:
 
 Here are the requirements of the management committee:
 
-    the presentation of the functionalities must be simple;
+   the presentation of the functionalities must be simple;
     the creation of an account must be simple and possible from a cell phone;
     the profile must contain very little information so that its completion is fast; - the deletion of the account must be possible;
     access to a forum where employees can publish multimedia content must be available;
@@ -142,7 +142,7 @@ Here are the requirements of the management committee:
 
 Functional reflections on the User & Moderation part
 
-    Lambda" user must be able to :
+   Lambda" user must be able to :
         create an account with : name - first name - email - password ⇒ The network being internal only a groupomania.com address will be accepted
         Log in with his email & password
         Add an avatar (and a description to his profile)
@@ -152,23 +152,16 @@ Functional reflections on the User & Moderation part
         The user must be able to like a post
         The user must be able to comment a post
 
-    The moderator must be able to:
+   The moderator must be able to:
         create a post
         delete a post
         delete a comment
         Comment on a post
 
-Technologies, software, languages, frameworks, plugins used
+Technologies, software, languages, frameworks, plugins used :
 
-    Visual Studio Code
-
-    Git, GitHubDesktop & Github
-
-    HTML, CSS, JS
-
-    Backend: a. NodeJs b. Nodemon c. mySQL d.Express d.bcrypt g.no cache/ path /multer /JsonwebToken ... i. Multer
-
-    Front-end a.Vuejs - NuxtJS b.Axios c.nuxt/colormode d.Boostrap Vue (icons) e.Day jS
+- HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, SQL & MySQL, CRUD Operations, OWASP & RGPD Standards.
+- Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, Password-validator.
 
 <br>
 ## Front-end : How to make this project work.
