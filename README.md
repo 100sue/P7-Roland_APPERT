@@ -126,37 +126,38 @@ Context:
 
 ## Here are the requirements of the management committee: ##
 The presentation of the functionalities must be simple :
-- the creation of an account must be simple and possible from a cell phone.
-- the profile must contain very little information so that its completion is fast; - the deletion of the account must be possible;
-    access to a forum where employees can publish multimedia content must be available;
-    Access to a forum where employees publish texts must be present; users must be able to easily locate the latest contributions of employees ;
-    the Groupomania communication manager must be able to moderate interactions between employees and the Groupomania communication manager must be able to display the latest employee contributions
-    The database must be manipulated with the SQL language
-    The connection data must be secure
-    The project must be inclusive by respecting the WACG standards
+- Tthe creation of an account must be simple and possible from a cell phone.
+- The profile must contain very little information so that its completion is fast; - the deletion of the account must be possible.
+- Access to a forum where employees can publish multimedia content must be available.
+- Access to a forum where employees publish texts must be present.
+- Users must be able to easily locate the latest contributions of employees.
+- The Groupomania communication manager must be able to moderate interactions between employees and the Groupomania communication manager must be able to display the latest employee contributions.
+- The database must be manipulated with the SQL language.
+- The connection data must be secure.
+- The project must be inclusive by respecting the WACG standards.
 
 ## Functional reflections on the User & Moderation part: ##
 
 Lambda" user must be able to :
-         create an account with : name - first name - email - password 
-         Log in with his email & password
-         Add an avatar (and a description to his profile)
-         The user must be able to post a text and/or an image or a link
-         User must be able to edit or delete their post.
+- create an account with : name - first name - email - password. 
+- Log in with his email & password.
+- Add an avatar (and a description to his profile).
+- The user must be able to post a text and/or an image or a link.
+- User must be able to edit or delete their post.
         
         
  The user must be able to see the posts of other users and easily find a post: 
-       -  Option A: Display the posts from the most recent to the oldest 
-       -  Option B : Post theme 3.option 
-       -  Option C : Integration of a block "my commented posts
-        The user must be able to like a post
-        The user must be able to comment a post
+-  Option A: Display the posts from the most recent to the oldest .
+-  Option B : Post theme 3.option .
+-  Option C : Integration of a block "my commented posts.
+The user must be able to like a post.
+The user must be able to comment a post.
 
  The moderator must be able to:
-        create a post
-        delete a post
-        delete a comment
-        Comment on a post
+- create a post.
+- delete a post.
+- delete a comment.
+- Comment on a post.
 
 ## Technologies, software, languages, frameworks, plugins used : ##
 
