@@ -125,10 +125,9 @@ As a new develloper of the company, I have to set up an internal social network 
 Context:
 
 ## Here are the requirements of the management committee: ##
-
-   the presentation of the functionalities must be simple;
-    the creation of an account must be simple and possible from a cell phone;
-    the profile must contain very little information so that its completion is fast; - the deletion of the account must be possible;
+The presentation of the functionalities must be simple :
+- the creation of an account must be simple and possible from a cell phone.
+- the profile must contain very little information so that its completion is fast; - the deletion of the account must be possible;
     access to a forum where employees can publish multimedia content must be available;
     Access to a forum where employees publish texts must be present; users must be able to easily locate the latest contributions of employees ;
     the Groupomania communication manager must be able to moderate interactions between employees and the Groupomania communication manager must be able to display the latest employee contributions
@@ -139,7 +138,7 @@ Context:
 ## Functional reflections on the User & Moderation part: ##
 
 Lambda" user must be able to :
-         create an account with : name - first name - email - password ⇒ The network being internal only a groupomania.com address will be accepted
+         create an account with : name - first name - email - password 
          Log in with his email & password
          Add an avatar (and a description to his profile)
          The user must be able to post a text and/or an image or a link
