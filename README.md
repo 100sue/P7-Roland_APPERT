@@ -91,7 +91,7 @@ Veuillez cloner ce dépôt : il vous fournira les deux dossiers nécessaires : b
 
 - Vous aurez besoin de deux fenêtres de terminal : une pour le frontend, une pour le backend. 
 - Sur le terminal backend : exécutez "npm install, puis "npm run dev". 
-- Le serveur doit fonctionner sur localhost avec le port par défaut 3306. 
+- Le serveur doit fonctionner sur localhost avec le port par défaut 3300. 
 - Puis, sur le terminal frontend : lancez "npm install pour installer tous les plugins nécessaires, puis "npm run dev". 
 - Le frontend de l'application est visible sur http:// localhost: 3000/.
     
@@ -118,18 +118,61 @@ Pour l'Utilisation de l'application :
 
   ## This is an exercice as part of my developer training for OpenClassrooms : ##
 
-Tools used for this project : HTML5, CSS3,JavaScript, Node.js, Vue.js, Express, SQL & MySQL, Git & Github, CRUD Operations, OWASP & RGPD Standards.
 
-I also used a lot of depencies like : Bcrypt, Dotenv, Helmet, Jsonwebtoken, Multer, Password-validator.
+GROUPOMANIA
+
+As a new develloper of the company, I have to set up an internal social network in order to allow a better cohesion within the Groupomania group. I was given carte blanche to set up the back-end and the front-end with the objective to develloper an application close to Reddit or 9GAG.
+Context:
+
+## Here are the requirements of the management committee: ##
+The presentation of the functionalities must be simple :
+- Tthe creation of an account must be simple and possible from a cell phone.
+- The profile must contain very little information so that its completion is fast; - the deletion of the account must be possible.
+- Access to a forum where employees can publish multimedia content must be available.
+- Access to a forum where employees publish texts must be present.
+- Users must be able to easily locate the latest contributions of employees.
+- The Groupomania communication manager must be able to moderate interactions between employees and the Groupomania communication manager must be able to display the latest employee contributions.
+- The database must be manipulated with the SQL language.
+- The connection data must be secure.
+- The project must be inclusive by respecting the WACG standards.
+
+## Functional reflections on the User & Moderation part: ##
+
+Lambda" user must be able to :
+- create an account with : name - first name - email - password. 
+- Log in with his email & password.
+- Add an avatar (and a description to his profile).
+- The user must be able to post a text and/or an image or a link.
+- User must be able to edit or delete their post.
+        
+        
+ The user must be able to see the posts of other users and easily find a post: 
+-  Option A: Display the posts from the most recent to the oldest .
+-  Option B : Post theme 3.option .
+-  Option C : Integration of a block "my commented posts.
+The user must be able to like a post.
+The user must be able to comment a post.
+
+ The moderator must be able to:
+- create a post.
+- delete a post.
+- delete a comment.
+- Comment on a post.
+
+## Technologies, software, languages, frameworks, plugins used : ##
+
+- HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, SQL & MySQL, CRUD Operations, OWASP & RGPD Standards.
+- Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, Password-validator.
 
 <br>
-## Front-end : How to make this project work.
+
+## Front-end : How to make this project work. ##
 
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+[VSCode](https://code.visualstudio.com/) + [Vetur]((and disable Volar)
 
 ## Customize configuration
 
