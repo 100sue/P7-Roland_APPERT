@@ -6,26 +6,12 @@
     <form class="form-card" v-on:submit.prevent="envoiForm">
       <div class="form-group">
         <label for="email">Email</label>
-        <input
-          type="text"
-          v-model="formData.email"
-          id="email"
-          class="form-control"
-          aria-invalid="false"
-          required
-        />
+        <input type="text" v-model="formData.email" id="email" class="form-control" aria-invalid="false" required />
         <div class="form-err"></div>
       </div>
       <div class="form-group">
         <label for="password">Mot de passe</label>
-        <input
-          type="password"
-          v-model="formData.password"
-          id="password"
-          class="form-control"
-          aria-invalid="false"
-          required
-        />
+        <input type="password" v-model="formData.password"  id="password" class="form-control" aria-invalid="false" required />
         <div class="form-err"></div>
       </div>
       <button class="form-btn">Se connecter</button>

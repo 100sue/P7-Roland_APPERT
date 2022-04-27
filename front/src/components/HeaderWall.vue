@@ -2,33 +2,16 @@
   <header class="header-container">
     <!-- Header général comprenant le logo Groupomania et les liens de navigations vers les différentes pages de l'app -->
     <nav>
-      <router-link
-        to="/wall"
-        title="Retour à la page d'accueil"
-        class="logo-header"
-      >
-        <img
-          src="../assets/main-header.png"
-          alt="Réseau social d'entreprise Groupomania"
-          class="logo-img"
-        />
+      <router-link to="/wall" title="Retour à la page d'accueil" class="logo-header" >
+        <img src="../assets/main-header.png" alt="Réseau social d'entreprise Groupomania" class="logo-img" />
       </router-link>
-      <router-link
-        to="/community"
-        title="Membres de l'équipe"
-        class="users-header"
-      >
+      <router-link to="/community" title="Membres de l'équipe" class="users-header" >
         <i class="fas -solid fa-users"></i>
       </router-link>
       <router-link to="/profil" title="Profil" class="profil-header">
         <i class="fas fa-user-circle"></i>
       </router-link>
-      <a
-        href=""
-        @click.prevent="deconnexion"
-        title="Se déconnecter"
-        class="deconnect-header"
-      >
+      <a href="" @click.prevent="deconnexion" title="Se déconnecter" class="deconnect-header" >
         <i class="fas -solid fa-power-off"></i>
       </a>
     </nav>

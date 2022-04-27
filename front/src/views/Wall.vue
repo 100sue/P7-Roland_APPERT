@@ -9,7 +9,7 @@
       <Post
         v-for="post in posts"
         :key="post.id"
-        :post="post"
+        :post="{post}"
         :deletePost="deletePost"
         :addLike="addLike"
         :addComment="addComment"
@@ -86,7 +86,9 @@ export default {
         const post = response.data;
         post["likes"] = 0;
         this.posts = [post].concat(this.posts);
-      });
+      }).catch((err) => {
+          alert(err);
+        });
     },
     // Suppression d'une publication
     deletePost(postId) {
