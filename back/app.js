@@ -26,8 +26,8 @@ app.use(helmet());
 // Accès autorisé pour tous, Accès autorisé sous certains en-têtes, Accès autorisé sous certaines méthodes.
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*'); 
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'); 
+    res.setHeader('Access-Control-Allow-Origin', '*');  
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization, multipart/form-data'); 
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS'); 
     next();
   });
