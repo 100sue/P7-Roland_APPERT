@@ -6,7 +6,14 @@
 
  Réseau Social Groupomania : projet frontend et backend.
  
- Projet S.E.V.N (Sql, Express, Vue, Node)
+<br>
+
+ ## Projet S.E.V.N (Mysql, Express, Vue, Node) ##
+
+ <p align="center">
+<img src= "https://user-images.githubusercontent.com/90606431/186603198-03e733ce-0d3b-4f0a-9270-b9c613060afb.png"/>
+ </p>
+ 
  
   ## Objectif : ## 
 
