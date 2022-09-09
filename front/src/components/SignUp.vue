@@ -80,7 +80,7 @@ export default {
         data: this.signUpForm,
         headers: { "Content-Type": "application/json" },
       })
-        // Inscription réussite, maj du localStorage et redirection sur le Login
+        // Inscription réussie, maj du localStorage et redirection sur le Login
         .then((reponse) => {
           console.log(reponse);
           alert(
