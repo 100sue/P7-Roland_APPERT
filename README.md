@@ -21,13 +21,13 @@
 - Choisir la fonctionnalité à développer et fournir un MVP pour faciliter les interactions entre collègues dans un cadre plus informel.
 - Développer les parties front-end et back-end de l'application.
 
-Ce projet utilisera NodeJs, Express et MySQL pour le backend, et Vue pour le frontend.
+Ce projet utilisera NodeJs, Express et MySQL pour le backend, et Vue et vite pour le frontend.
 <br>
 
  ## Technologies utilisées : ##
  
 - HTML5, CSS3, JavaScript, Node.js, Vue.js, Express, SQL & MySQL, CRUD Operations, OWASP & RGPD Standards.
-- Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, Password-validator.
+- Dependances : Bcrypt, Dotenv, Express, Express-rate-limit, Helmet, Jsonwebtoken, Multer, MySql, MySql2, Password-validator.
 
  <br>
  <br>
