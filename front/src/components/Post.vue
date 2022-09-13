@@ -59,16 +59,16 @@
       </div>
       <div class="post-img">
         <img
-          :src="`http://localhost:3000/${post.media}`"
+          :src="`http://localhost:3000${post.media}`"
           title="Image du post"
           class="wall-img"
           v-if="post.media"
         />
         <img
-          :src="post.link"
+          :src="post.contenu"
           title="Image du post"
           class="wall-img"
-          v-if="post.link && !post.media"
+          v-if="post.contenu && !post.media"
         />
       </div>
       <div class="post-likes">
@@ -187,6 +187,10 @@ export default {
       },
       reveleComment: false,
     };
+  },
+  mounted() {
+    console.log("in post vue component")
+    console.log(this.post);
   },
   methods: {
     // Fonction fermant automatiquement la partie option de post, dès lors que l'utilisateur click au delà des boutons modifier et supprimer
@@ -408,3 +412,4 @@ export default {
   font-weight: bold;
 }
 </style>
+Footer

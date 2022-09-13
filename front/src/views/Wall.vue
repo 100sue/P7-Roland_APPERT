@@ -9,7 +9,7 @@
       <Post
         v-for="post in posts"
         :key="post.id"
-        :post="{post}"
+        :post="post"
         :deletePost="deletePost"
         :addLike="addLike"
         :addComment="addComment"
@@ -31,7 +31,6 @@ import axios from "axios";
 import HeaderWall from "../components/HeaderWall.vue";
 import AddPost from "../components/AddPost.vue";
 import Post from "../components/Post.vue";
-
 export default {
   name: "Wall",
   components: {
@@ -74,6 +73,7 @@ export default {
     },
     // Création d'une nouvelle publication
     createPost(formData) {
+      console.log(formData)
       axios({
         method: "post",
         url: "http://localhost:3000/api/posts",
@@ -83,9 +83,12 @@ export default {
           Authorization: `Bearer ${this.token}`,
         },
       }).then((response) => {
+        alert("Publication ajoutée !");
         const post = response.data;
         post["likes"] = 0;
         this.posts = [post].concat(this.posts);
+        console.log("in create post")
+        console.log([post].concat(this.posts))
       }).catch((err) => {
           alert(err);
         });
@@ -152,6 +155,7 @@ export default {
           Authorization: `Bearer ${this.token}`,
         },
       }).then((response) => {
+        console.log("load comments of ",response.data)
         this.comments = {
           ...this.comments,
           [postId]: response.data,
@@ -299,7 +303,6 @@ export default {
   outline: 0;
   box-shadow: none;
 }
-
 /* Boutons options de post */
 .dropdown-btn {
   color: black;
@@ -348,7 +351,6 @@ export default {
   right: 0;
   margin-right: 5%;
 }
-
 /* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 1023px) {
   .wall-card {

@@ -43,7 +43,6 @@
 
 <script>
 import axios from "axios";
-
 export default {
   name: "SignUp",
   props: {
@@ -87,7 +86,7 @@ export default {
             "Inscription réussie ! Veuillez vous connecter pour accéder à votre compte !"
           );
           localStorage.clear();
-          this.$router.push({ name: "home" });
+          this.$router.push({ name: "Home" });
         })
         .catch((err) => {
           alert(err.response.data.message);
