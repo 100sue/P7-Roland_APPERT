@@ -7,8 +7,7 @@
 
 require('dotenv').config();
 const express = require('express');   
-const helmet = require('helmet'); 
-const bodyParser = require('body-parser'); 
+const helmet = require('helmet');
 const apiLimiter = require('./middleware/limits-rate'); 
 const path = require('path'); 
 
@@ -20,20 +19,21 @@ const commentRoutes = require('./routes/commentRoutes');
 // Création de l'application Express, sécurisée par le package Helmet via la définition d'en-têtes HTTP diverses :
 
 const app = express(); 
-app.use(helmet());
+//app.use(helmet());
 
 // Ajout des headers permettant le Cross Origin Resource Sharing (CORS) :
 // Accès autorisé pour tous, Accès autorisé sous certains en-têtes, Accès autorisé sous certaines méthodes.
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');  
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization, multipart/form-data'); 
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization'); 
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS'); 
     next();
   });
 
 
-app.use(bodyParser.json()); 
+  app.use(express.json());  // Makes sure to intepret json body request
+  app.use(express.urlencoded({extended: true})); //Parse all form-data bodies
 
 // Définition des différentes routes : utilisateur, publications, likes,commentaires.
 // Route images.

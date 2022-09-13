@@ -2,12 +2,12 @@
 --
 -- Host: localhost    Database: group
 -- ------------------------------------------------------
--- Server version	8.0.28
+-- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -16,34 +16,34 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `comments`
+-- Table structure for table `commentaires`
 --
 
-DROP TABLE IF EXISTS `comments`;
+DROP TABLE IF EXISTS `commentaires`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `comments` (
+CREATE TABLE `commentaires` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `utilisateurs_id` int NOT NULL DEFAULT '0',
-  `publications_id` int NOT NULL DEFAULT '0',
-  `date_ajout` datetime NOT NULL,
-  `date_modification` datetime NOT NULL,
+  `utilisateur_id` int NOT NULL DEFAULT '0',
+  `publication_id` int NOT NULL DEFAULT '0',
+  `date_ajout` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `date_modification` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `message` text NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK2_publications_id` (`publications_id`),
-  KEY `FK1_utilisateurs_id` (`utilisateurs_id`),
-  CONSTRAINT `FK1_id_utilisateurs` FOREIGN KEY (`utilisateurs_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK2_publications_id` FOREIGN KEY (`publications_id`) REFERENCES `publications` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  KEY `FK2_publications_id` (`publication_id`),
+  KEY `FK1_utilisateurs_id` (`utilisateur_id`),
+  CONSTRAINT `FK1_id_utilisateurs` FOREIGN KEY (`utilisateur_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK2_publications_id` FOREIGN KEY (`publication_id`) REFERENCES `publications` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `comments`
+-- Dumping data for table `commentaires`
 --
 
-LOCK TABLES `comments` WRITE;
-/*!40000 ALTER TABLE `comments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `comments` ENABLE KEYS */;
+LOCK TABLES `commentaires` WRITE;
+/*!40000 ALTER TABLE `commentaires` DISABLE KEYS */;
+/*!40000 ALTER TABLE `commentaires` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -55,15 +55,15 @@ DROP TABLE IF EXISTS `likes`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `likes` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `utilisateurs_id` int NOT NULL,
-  `publications_id` int NOT NULL,
+  `utilisateur_id` int NOT NULL,
+  `publication_id` int NOT NULL,
   `vote` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `FK1_utilisateurs_id` (`utilisateurs_id`),
-  KEY `FK3_publications_id` (`publications_id`),
-  CONSTRAINT `FK1_utilisateurs_id` FOREIGN KEY (`utilisateurs_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `FK3_publications_id` FOREIGN KEY (`publications_id`) REFERENCES `publications` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  KEY `FK1_utilisateurs_id` (`utilisateur_id`),
+  KEY `FK3_publications_id` (`publication_id`),
+  CONSTRAINT `FK1_utilisateurs_id` FOREIGN KEY (`utilisateur_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `FK3_publications_id` FOREIGN KEY (`publication_id`) REFERENCES `publications` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,14 +85,15 @@ DROP TABLE IF EXISTS `publications`;
 CREATE TABLE `publications` (
   `id` int NOT NULL AUTO_INCREMENT,
   `utilisateur_id` int NOT NULL,
-  `message` varchar(255) DEFAULT NULL,
+  `message` text,
   `contenu` text,
-  `date_ajout` datetime NOT NULL,
-  `date_modification` datetime NOT NULL,
+  `date_ajout` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `date_modification` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `media` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_posts_utilisateurs` (`utilisateur_id`),
   CONSTRAINT `FK_posts_utilisateurs` FOREIGN KEY (`utilisateur_id`) REFERENCES `utilisateurs` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,7 +123,7 @@ CREATE TABLE `utilisateurs` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`),
   KEY `FK_utilisateurs_authority` (`isAdmin`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -144,4 +145,5 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-04 12:03:01
+-- Dump completed on 2022-09-12  7:58:10
+

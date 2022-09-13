@@ -15,26 +15,33 @@ const db = require('../database');
 
 
 exports.createPost = (req, res, next) => {
+    console.log("in create post")
+    console.log(req.body)
+    console.log(req.body.message)
+    console.log(req.body.image)
     if (!req.body.message){
         res.status(400).json({ message: "Erreur lors de la création de la publication !" });
         return
     }
     let media = null;
-        if (req.file && req.file.filename !== undefined) {
-            media = `/images/${req.file.filename}`;
+    if (req.file && req.file.filename !== undefined) {
+        media = `/images/${req.file.filename}`;
+    }
+    console.log(media)
+    let sqlCreatePost = `INSERT INTO publications (utilisateur_id, message, media, contenu) VALUES (?, ?, ?, ?)`;
+    db.execute(sqlCreatePost, [req.userId, req.body.message, media, req.body.link], (error, publication) => {
+    if (!error) {
+
+        db.query(`SELECT publications.*, utilisateurs.nom, utilisateurs.prenom, utilisateurs.image,
+        IF(publications.utilisateur_id = ${req.userId} OR "${req.status}" = "admin", 1, 0) AS editable 
+        FROM publications JOIN utilisateurs ON publications.utilisateur_id = utilisateurs.id WHERE publications.id = LAST_INSERT_ID()`,(error, publication) => {
+            res.status(201).json(publication[0]);
+        })
+        } else {
+            console.log(error)
+            res.status(400).json({ message: "Erreur lors de la création de la publication !" });
         }
-        let sqlCreatePost = `INSERT INTO publications (utilisateur_id, message, media, link, date_ajout) VALUES (?, ?, ?, ?, NOW())`;
-        db.execute(sqlCreatePost, [req.userId, req.body.message, media, req.body.link], (error, publication) => {
-            if (!error) {
-                db.query(`SELECT publications.*, utilisateurs.nom, utilisateurs.prenom, utilisateurs.image,
-                IF(publications.utilisateur_id = ${req.userId} OR "${req.status}" = "admin", 1, 0) AS editable 
-                FROM publications JOIN utilisateurs ON publications.utilisateur_id = utilisateurs.id WHERE publications.id = LAST_INSERT_ID()`,(error, publication) => {
-                    res.status(201).json(publication[0]);
-                })
-                } else {
-                    res.status(400).json({ message: "Erreur lors de la création de la publication !" });
-                }
-            });
+    });
 };
 
 
@@ -50,7 +57,7 @@ exports.updatePost = (req, res, next) => {
     if (req.file && req.file.filename !== undefined) {
         media = `/images/${req.file.filename}`;
     } 
-    db.query(`UPDATE publications SET message=?, media=?, link=? WHERE id = ?`, [message, media, link,req.params.id], (error, result) => {
+    db.query(`UPDATE publications SET message=?, media=?, contenu=? WHERE id = ?`, [message, media, link,req.params.id], (error, result) => {
         if (error) {
             return res.status(400).json({ error: "Le post n'a pas pu être modifié" })
         }
@@ -102,6 +109,8 @@ exports.getAllPosts = (req, res, next) => {
     IF(publications.utilisateur_id = ${req.userId} OR "${req.status}" = "admin", 1, 0) AS editable
     FROM publications JOIN utilisateurs ON publications.utilisateur_id = utilisateurs.id
     ORDER BY date_ajout desc`, (error, result) => {
+        console.log("getall error:",error)
+        console.log("getall result:",result)
         if (error) {
             return res.status(400).json({ error: 'Publications non trouvées' });
         }

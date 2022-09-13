@@ -10,7 +10,7 @@ const db = require('../database');
 // Envoi de la requête à la BDD
 
 exports.addComment = (req, res, next) => {
-    let sqlCreateComment = `INSERT INTO commentaires (utilisateur_id, publication_id, message, date_ajout) VALUES ('${req.userId}', '${req.body.postId}', '${req.body.message}', NOW())`;
+    let sqlCreateComment = `INSERT INTO commentaires (utilisateur_id, publication_id, message) VALUES ('${req.userId}', '${req.body.postId}', '${req.body.message}')`;
     db.query(sqlCreateComment, (error, publication) => {
         if (!error) {
             res.status(201).json({ message: "Commentaire ajouté !" });

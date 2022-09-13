@@ -2,6 +2,7 @@
 // Gestion du MIME type des fichiers images
 
 const multer = require('multer');
+const path = require('path');
 
 const MIME_TYPES = {
     'image/jpg': 'jpg',
@@ -22,8 +23,10 @@ const storage = multer.diskStorage ({
 
     filename: (req, file, callback) => {
         const name = file.originalname.split(' ').join('_');
-        const extension = MIME_TYPES[file.mimetype];
-        callback(null, name + Date.now() + '.' + extension);
+        const extension = path.extname(file.originalname).toLowerCase();
+        //const extension = MIME_TYPES[file.mimetype];
+        //callback(null, name + Date.now() + '.' + extension);
+        callback(null, name + '_' + Date.now() + extension);
     }
 });
 
