@@ -193,7 +193,7 @@ export default {
   width: 50%;
   margin: auto;
   padding: 1% 2% 1% 2%;
-  background: #f1f1f1;
+  background: #315ef0;
   border-radius: 2px;
   box-shadow: 0 0 20px #000000b3;
   box-sizing: border-box;
@@ -216,7 +216,7 @@ export default {
   font-weight: bold;
 }
 .post-header-date {
-  color: rgb(88, 88, 88);
+  color: rgb(236, 240, 245);
 }
 .post-content {
   margin: auto;
@@ -235,7 +235,7 @@ export default {
   margin-right: 1%;
 }
 .card-sep {
-  color: rgb(30, 51, 121);
+  background-color: #fd340a;
 }
 .post-actions {
   display: flex;
@@ -276,7 +276,7 @@ export default {
   margin-left: 2%;
   padding: 1%;
   border-radius: 5px;
-  background-color: rgb(219, 222, 226);
+  background-color: #fd340a;
   height: 50px;
   line-height: 0.8;
 }
@@ -305,11 +305,12 @@ export default {
 }
 /* Boutons options de post */
 .dropdown-btn {
-  color: black;
+  color: #fd340a;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  background-color: #315ef0;
 }
 .dropdown {
   margin-left: auto;
@@ -321,7 +322,7 @@ export default {
   font-weight: bold;
 }
 .dropdown-content {
-  background-color: #f1f1f1;
+  background-color: #fd340a;
   border-radius: 5px;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -329,6 +330,7 @@ export default {
   position: absolute;
   top: 55px;
   right: 10px;
+  color: #fd340a;
 }
 .dropdown-content a {
   color: black;
@@ -336,9 +338,10 @@ export default {
   text-decoration: none;
   display: block;
   margin: 1%;
+  background-color: #fd340a;
 }
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #315ef0;
 }
 .show {
   display: block;
@@ -350,6 +353,7 @@ export default {
   position: absolute;
   right: 0;
   margin-right: 5%;
+  background-color: #fd340a;
 }
 /* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 1023px) {

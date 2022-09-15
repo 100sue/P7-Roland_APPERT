@@ -189,7 +189,7 @@ export default {
   width: 30%;
   margin-top: 5%;
   padding: 0.5%;
-  background: #f1f1f1;
+  background: #315ef0;
   box-shadow: 0 0 20px #000000b3;
   border-radius: 5px;
   align-items: center;

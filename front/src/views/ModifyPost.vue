@@ -183,14 +183,14 @@ export default {
   background-image: url("../assets/test2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 80vh;;
   padding: 3%;
 }
 .modify-card {
   width: 50%;
   margin: auto;
   padding: 1% 2% 1% 2%;
-  background: #f1f1f1;
+  background: #315ef0;
   border-radius: 2px;
   box-shadow: 0 0 20px #000000b3;
   box-sizing: border-box;
@@ -218,12 +218,14 @@ export default {
   font-weight: bold;
 }
 .post-header-date {
-  color: rgb(88, 88, 88);
+  color: #fd340a;
+  font-weight: bold;
 }
 .btn-annuler {
   border: none;
   font-size: 1.5em;
   color: rgb(30, 51, 121);
+  background-color: #315ef0;;
 }
 .btn-annuler :hover {
   color: red;
@@ -257,7 +259,7 @@ export default {
   align-content: center;
   display: flex;
   padding-top: 1%;
-  color: rgb(30, 51, 121);
+  color: white;
   transition: transform 0.3s;
 }
 .post-img:hover {
@@ -271,7 +273,10 @@ export default {
 .post-btn {
   margin-bottom: 2%;
   width: 45%;
-  background-color: rgb(49, 94, 240);
+  background-color: #fd340a;
+  border: 1px solid #d4d3e8;
+  box-shadow: 0px 1px 1px black;
+  font-weight: 700;
   color: white;
   height: 3em;
   border-radius: 10px;

@@ -365,14 +365,15 @@ export default {
   display: flex;
 }
 .dropdown-btn {
-  color: black;
+  color: #fd340a;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  background-color: #315ef0;
 }
 .dropdown-content {
-  background-color: #f1f1f1;
+  background-color: #315ef0;
   border-radius: 5px;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -380,6 +381,7 @@ export default {
   position: absolute;
   top: 55px;
   right: 10px;
+  color: #fd340a;
 }
 .dropdown-options {
   margin: 3%;
@@ -397,9 +399,10 @@ export default {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  background-color:#315ef0;
 }
 .dropdown-content-comments {
-  background-color: #f1f1f1;
+  background-color: #fd340a;
   border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
