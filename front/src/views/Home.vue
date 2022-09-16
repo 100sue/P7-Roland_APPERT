@@ -83,7 +83,7 @@ button {
   font-size: 18px;
   font-family: sans-serif;
   text-decoration: none;
-  color: #333;
+  color: #315ef0;
   border: 2px solid #333;
   letter-spacing: 2px;
   text-align: center;

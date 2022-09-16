@@ -216,14 +216,18 @@ export default {
   font-weight: bold;
 }
 .post-header-date {
-  color: rgb(236, 240, 245);
+  color: rgb(124, 172, 237);
 }
 .post-content {
   margin: auto;
 }
+.post-txt {
+  font-size: 1.1em;
+}
 .wall-img {
   width: 100%;
 }
+
 .post-likes {
   display: flex;
   align-items: center;
@@ -235,7 +239,7 @@ export default {
   margin-right: 1%;
 }
 .card-sep {
-  background-color: #fd340a;
+  color: rgb(30, 51, 121);
 }
 .post-actions {
   display: flex;
@@ -276,7 +280,7 @@ export default {
   margin-left: 2%;
   padding: 1%;
   border-radius: 5px;
-  background-color: #fd340a;
+  background-color: rgb(124 172 237);
   height: 50px;
   line-height: 0.8;
 }
@@ -304,6 +308,12 @@ export default {
   box-shadow: none;
 }
 /* Boutons options de post */
+
+.dropdown {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+}
 .dropdown-btn {
   color: #fd340a;
   padding: 16px;
@@ -312,17 +322,8 @@ export default {
   cursor: pointer;
   background-color: #315ef0;
 }
-.dropdown {
-  margin-left: auto;
-  position: relative;
-  display: flex;
-}
-.dropdown-options {
-  margin-left: 10%;
-  font-weight: bold;
-}
 .dropdown-content {
-  background-color: #fd340a;
+ 
   border-radius: 5px;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -330,10 +331,10 @@ export default {
   position: absolute;
   top: 55px;
   right: 10px;
-  color: #fd340a;
+  
 }
 .dropdown-content a {
-  color: black;
+  color: #315ef0;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -343,9 +344,14 @@ export default {
 .dropdown-content a:hover {
   background-color: #315ef0;
 }
+.dropdown-options {
+  margin-left: 10%;
+  font-weight: bold;
+}
 .show {
   display: block;
 }
+
 /* Bouton Scroll to the Top */
 .toTop {
   width: 7vh;
@@ -353,8 +359,10 @@ export default {
   position: absolute;
   right: 0;
   margin-right: 5%;
-  background-color: #fd340a;
+  background-color: #315ef0;
+  color: #fd340a;
 }
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 1023px) {
   .wall-card {

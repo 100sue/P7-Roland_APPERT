@@ -72,7 +72,7 @@
         />
       </div>
       <div class="post-likes">
-        <img src="../assets/pouce.png" title="Likes" class="wall-likes" />
+        <i class="far fa-thumbs-up" id="icon-like"></i>
         <p>{{ post.likes }}</p>
       </div>
     </div>
@@ -262,14 +262,17 @@ export default {
 }
 .post-header-name {
   font-size: 1.1em;
-  font-weight: bold;
 }
 .post-header-date {
-  color: rgb(88, 88, 88);
+  color: rgb(124, 172, 237);
 }
 .post-content {
   margin: auto;
 }
+.post-txt {
+  font-size: 1.1em;
+}
+
 .wall-img {
   width: 100%;
 }
@@ -277,12 +280,10 @@ export default {
   display: flex;
   align-items: center;
   margin-left: 5%;
+  margin-right: 88%;
+  justify-content: space-between;
 }
-.post-likes img {
-  width: 5%;
-  height: 5%;
-  margin-right: 1%;
-}
+
 .card-sep {
   color: rgb(30, 51, 121);
 }
@@ -310,6 +311,7 @@ export default {
 .post-action-like,
 .post-action-comment {
   width: 20%;
+  color: #fd340a
 }
 .like-txt,
 .comment-txt {
@@ -327,7 +329,7 @@ export default {
   margin-left: 2%;
   padding: 1%;
   border-radius: 5px;
-  background-color: rgb(219, 222, 226);
+  background-color: rgb(124 172 237);
   height: 50px;
   line-height: 0.8;
 }
@@ -392,9 +394,10 @@ export default {
   margin-left: auto;
   position: relative;
   display: flex;
+  background-color:#315ef0;
 }
 .dropdown-btn-comments {
-  color: black;
+  color: #fd340a;
   padding: 16px;
   font-size: 16px;
   border: none;
