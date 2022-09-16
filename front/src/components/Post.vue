@@ -262,6 +262,7 @@ export default {
 }
 .post-header-name {
   font-size: 1.1em;
+  font-weight: bold;
 }
 .post-header-date {
   color: rgb(124, 172, 237);
@@ -418,4 +419,3 @@ export default {
   font-weight: bold;
 }
 </style>
-Footer
