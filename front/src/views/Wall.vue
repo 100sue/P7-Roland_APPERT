@@ -253,6 +253,7 @@ export default {
 #icon-like:hover,
 #icon-comment:hover {
   transform: scale(1.3);
+  color: #fd340a;
 }
 .post-action-like {
   margin-left: 20%;

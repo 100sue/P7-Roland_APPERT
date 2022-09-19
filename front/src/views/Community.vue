@@ -196,6 +196,7 @@ export default {
 }
 .member-name {
   font-size: 1.1em;
+  color: white;
 }
 .member-pic {
   margin-right: 5%;

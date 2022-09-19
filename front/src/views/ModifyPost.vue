@@ -52,16 +52,16 @@
             />
             <div class="post-media">
               <img
-                :src="`http://localhost:3000/${post.media}`"
+                :src="`http://localhost:3000${post.media}`"
                 alt="Image post"
                 class="wall-img"
                 v-if="post.media != 'null'"
               />
               <img
-                :src="post.link"
+                :src="post.contenu"
                 alt="Image post"
                 class="wall-img"
-                v-if="post.link && post.media == 'null'"
+                v-if="post.contenu && post.media == 'null'"
               />
             </div>
             <div class="post-modif">
@@ -70,7 +70,7 @@
                 name="postContent"
                 id="postContent"
                 class="post-input"
-                placeholder="Joindre un lien ?"
+                placeholder="Joindre une vidéo, un lien  ?"
                 title="Joindre un lien"
               />
               <div class="post-img">

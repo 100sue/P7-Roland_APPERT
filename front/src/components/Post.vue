@@ -265,7 +265,7 @@ export default {
   font-weight: bold;
 }
 .post-header-date {
-  color: rgb(124, 172, 237);
+  color: white;
 }
 .post-content {
   margin: auto;
@@ -300,6 +300,7 @@ export default {
 #icon-like:hover,
 #icon-comment:hover {
   transform: scale(1.3);
+  color: #fd340a;
 }
 .post-action-like {
   margin-left: 20%;
@@ -312,7 +313,7 @@ export default {
 .post-action-like,
 .post-action-comment {
   width: 20%;
-  color: #fd340a
+  color: white;
 }
 .like-txt,
 .comment-txt {
@@ -368,7 +369,7 @@ export default {
   display: flex;
 }
 .dropdown-btn {
-  color: #fd340a;
+  color: white;
   padding: 16px;
   font-size: 16px;
   border: none;

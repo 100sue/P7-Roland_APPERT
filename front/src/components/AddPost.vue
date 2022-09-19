@@ -21,7 +21,7 @@
           name="postContent"
           id="postContent"
           class="post-input"
-          placeholder="Joindre un lien ?"
+          placeholder="Joindre une vidéo, un lien ?"
           title="Joindre un lien"
           v-model="postForm.link"
         />
