@@ -18,7 +18,7 @@
   ## Objectif : ## 
 
 - Construire un réseau social interne pour les employés de Groupomania.
-- Choisir la fonctionnalité à développer et fournir un MVP pour faciliter les interactions entre collègues dans un cadre plus informel.
+- Choisir la fonctionnalité à développer et fournir un MVP (Minimum Viable Product) pour faciliter les interactions entre collègues dans un cadre plus informel.
 - Développer les parties front-end et back-end de l'application.
 
 Ce projet utilisera NodeJs, Express et MySQL pour le backend, et Vue et vite pour le frontend.
