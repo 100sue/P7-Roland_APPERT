@@ -57,8 +57,22 @@
                 class="wall-img"
                 v-if="post.media != 'null'"
               />
+              <img
+                :src="post.contenu"
+                alt="Image post"
+                class="wall-img"
+                v-if="post.contenu && post.media == 'null'"
+              />
             </div>
             <div class="post-modif">
+              <input
+                type="text"
+                name="postContent"
+                id="postContent"
+                class="post-input"
+                placeholder="Joindre une vidéo ?"
+                title="Joindre une vidéo"
+              />
               <div class="post-img">
                 <label for="addContent"
                   ><i class="far fa-file-image" title="Ajouter un fichier"></i
@@ -230,9 +244,7 @@ export default {
 .post-infos {
   text-align: center;
 }
-.post-content {
-  display: flex;
-}
+
 .post-input {
   width: 45%;
   margin-bottom: 2%;
@@ -242,7 +254,7 @@ export default {
   display: none;
 }
 .post-img {
-  width: 25%;
+  width: 10%;
   font-size: 1.5em;
   justify-content: center;
   align-content: center;
@@ -259,7 +271,6 @@ export default {
   display: flex;
   width: 100%;
   margin-top: 3%;
-  justify-content: space-between;
 }
 .post-btn {
   margin-bottom: 2%;
