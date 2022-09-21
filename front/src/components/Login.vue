@@ -44,7 +44,7 @@ export default {
     };
   },
   methods: {
-    // Login de l'utilisateur à son compte
+    // Login de l'utilisateur à son compte :
     envoiForm() {
       axios
         .post("http://localhost:3000/api/users/login", {

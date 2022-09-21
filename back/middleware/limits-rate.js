@@ -4,7 +4,7 @@
 const rateLimit = require('express-rate-limit');
 
 // Limitation du nombre de requêtes à l'API :
-// 2 fois, suspendu pendant 1h, limite chaque adresse IP à 100 requêtes par windowMs.
+// 2 fois, suspendu pendant 1h, limite chaque adresse IP à 100 requêtes par windows.
 
 const apiLimiter = rateLimit ({
     windowMs: 2 * 60 * 100,     

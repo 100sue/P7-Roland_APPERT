@@ -60,26 +60,26 @@ export default {
     };
   },
   methods: {
-    // Enregistrement d'un nouvel utilisateur
+    // Enregistrement d'un nouvel utilisateur :
     envoiForm() {
       const nom = this.signUpForm.nom;
       const prenom = this.signUpForm.prenom;
       const email = this.signUpForm.email;
       const password = this.signUpForm.password;
-      // Création du formulaire contenant les datas de l'utilisateur
+      // Création du formulaire contenant les datas de l'utilisateur :
       var formData = new FormData();
       formData.append("prenom", prenom);
       formData.append("nom", nom);
       formData.append("email", email);
       formData.append("password", password);
-      // Envoi du formulaire via la méthode post d'axios
+      // Envoi du formulaire via la méthode post d'axios :
       axios({
         method: "post",
         url: "http://localhost:3000/api/users/signup",
         data: this.signUpForm,
         headers: { "Content-Type": "application/json" },
       })
-        // Inscription réussie, maj du localStorage et redirection sur le Login
+        // Inscription réussie, maj du localStorage et redirection sur le Login.
         .then((reponse) => {
           console.log(reponse);
           alert(

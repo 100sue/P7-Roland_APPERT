@@ -35,7 +35,7 @@ app.use((req, res, next) => {
   app.use(express.json());  // Makes sure to intepret json body request
   app.use(express.urlencoded({extended: true})); //Parse all form-data bodies
 
-// Définition des différentes routes : utilisateur, publications, likes,commentaires.
+// Définition des différentes routes : utilisateur, publications, likes, commentaires.
 // Route images.
 
 app.use('/api/users', apiLimiter, userRoutes);  
@@ -44,6 +44,6 @@ app.use('/api/likes', likeRoutes);
 app.use('/api/comments', commentRoutes);        
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-// Exportation de l'application
+// Exportation de l'application.
 
 module.exports = app;

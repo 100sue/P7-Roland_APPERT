@@ -68,7 +68,7 @@ exports.updatePost = (req, res, next) => {
 // Suppression d'une publication :
 // Supprimer l'image si elle existe du post (delete dans le dossier images).
 // Recherche de la publication via son id avant suppression.
-// Si la publication n'a pas été trouvée, si l'id correspond, suppresion de la publication
+// Si la publication n'a pas été trouvée, si l'id correspond, suppresion de la publication.
 
 exports.deletePost = (req, res, next) => {
     const id = req.params.id;
@@ -101,7 +101,7 @@ exports.getOnePost = (req, res, next) => {
 
 // Récupération de l'intégralité des publications : 
 // Si les publications n'ont pas été trouvées.
-// Si les publications ont été trouvées, affichage de tous les posts
+// Si les publications ont été trouvées, affichage de tous les posts.
 
 exports.getAllPosts = (req, res, next) => {
     db.query(`SELECT publications.*, utilisateurs.nom, utilisateurs.prenom, utilisateurs.image,

@@ -8,13 +8,8 @@ const MIME_TYPES = {
     'image/jpg': 'jpg',
     'image/jpeg': 'jpg',
     'image/png': 'png',
-    'image/gif': 'gif',
-    'text/html': 'html',
-    'text/plain': 'plain',
-    'text/javascript': 'javascript',
-    'text/css': 'css'
+    'image/gif': 'gif'
 };
-
 
 // Objet de configuation de multer en charge de l'enregistrement des images :
 // Destionation des fichiers.

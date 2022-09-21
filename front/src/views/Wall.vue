@@ -64,14 +64,14 @@ export default {
       });
   },
   methods: {
-    // Bouton permettant un retour rapide en haut de page
+    // Bouton permettant un retour rapide en haut de page.
     toTop() {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
     },
-    // Création d'une nouvelle publication
+    // Création d'une nouvelle publication :
     createPost(formData) {
       console.log(formData)
       axios({
@@ -93,7 +93,7 @@ export default {
           alert(err);
         });
     },
-    // Suppression d'une publication
+    // Suppression d'une publication :
     deletePost(postId) {
       axios
         .delete(`http://localhost:3000/api/posts/${postId}`, {
@@ -108,7 +108,7 @@ export default {
           });
         });
     },
-    // Ajout d'un like
+    // Ajout d'un like.
     addLike(postId) {
       axios({
         method: "post",
@@ -131,7 +131,7 @@ export default {
         }
       });
     },
-    // Ajout d'un commentaire
+    // Ajout d'un commentaire :
     addComment(postId, message) {
       axios({
         method: "post",
@@ -145,7 +145,7 @@ export default {
         this.loadComments(postId);
       });
     },
-    // Chargement des commentaires d'un post
+    // Chargement des commentaires d'un post :
     loadComments(postId) {
       axios({
         method: "get",
@@ -162,7 +162,7 @@ export default {
         };
       });
     },
-    // Suppression de commentaire
+    // Suppression de commentaire :
     deleteComment(postId, commentId) {
       axios
         .delete(`http://localhost:3000/api/comments/${commentId}`, {

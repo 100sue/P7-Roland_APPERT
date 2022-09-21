@@ -1,6 +1,6 @@
 // Importation du package jsonwebtoken.
 // Importation des variables d'environnement.
-// Récupération du token
+// Récupération du token.
 
 const jwt = require('jsonwebtoken');
 require('dotenv').config();

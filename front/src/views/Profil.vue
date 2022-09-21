@@ -124,7 +124,7 @@ export default {
     this.getUserProfil();
   },
   methods: {
-    // Récupération des informations de l'utilisateur
+    // Récupération des informations de l'utilisateur :
     getUserProfil() {
       const userId = localStorage.id;
       axios
@@ -141,7 +141,7 @@ export default {
           this.$router.push({ name: "Home" });
         });
     },
-    // Modification du compte de l'utilisateur
+    // Modification du compte de l'utilisateur :
     updateProfil(id) {
       axios({
         method: "put",
@@ -155,7 +155,7 @@ export default {
         alert("Profil modifié avec succès !");
       });
     },
-    // Suppression du compte de l'utilisateur
+    // Suppression du compte de l'utilisateur :
     deleteUser(id) {
       if (
         window.confirm(
@@ -180,7 +180,7 @@ export default {
           });
       }
     },
-    // Ajout d'un avatar personnalisé
+    // Ajout d'un avatar personnalisé :
     updateUserImage(event) {
       const image = event.target.avatar.files[0];
       const id = this.user.id;

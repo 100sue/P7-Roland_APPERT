@@ -57,10 +57,8 @@
                 class="wall-img"
                 v-if="post.media != 'null'"
               />
-              
             </div>
             <div class="post-modif">
-             
               <div class="post-img">
                 <label for="addContent"
                   ><i class="far fa-file-image" title="Ajouter un fichier"></i
@@ -102,15 +100,15 @@ export default {
     this.getOnePost();
   },
   methods: {
-    // Annulation et redirection sur le Wall
+    // Annulation et redirection sur le Wall.
     cancelModify() {
       this.$router.push({ name: "Wall" });
     },
-    // Validation et redirection sur le Wall
+    // Validation et redirection sur le Wall.
     validMofidy() {
       this.$router.push({ name: "Wall" });
     },
-    // Mise en forme de la date d'ajout du post sur un standard français
+    // Mise en forme de la date d'ajout du post sur un standard français.
     datePost(date) {
       const event = new Date(date);
       const options = {
@@ -122,7 +120,7 @@ export default {
       };
       return event.toLocaleDateString("fr-Fr", options);
     },
-    // Récupération du post à modifier
+    // Récupération du post à modifier :
     getOnePost() {
       const postId = this.$route.params.id;
       axios
@@ -139,7 +137,7 @@ export default {
           this.$router.push({ name: "Home" });
         });
     },
-    // Modification du post
+    // Modification du post :
     updatePost(event) {
       const postId = this.$route.params.id;
       var formData = new FormData();
@@ -156,7 +154,7 @@ export default {
           Authorization: `Bearer ${this.token}`,
         },
       })
-        // Une fois les vérifications et modifications effectuées, redirection vers le Wall
+        // Une fois les vérifications et modifications effectuées, redirection vers le Wall.
         .then(() => {
           this.$router.push({ name: "Wall" });
         });

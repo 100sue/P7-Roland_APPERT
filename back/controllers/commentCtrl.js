@@ -7,7 +7,7 @@ const db = require('../database');
 
 // Ajout d'un nouveau commentaire :
 // Préparation de la requête SQL.
-// Envoi de la requête à la BDD
+// Envoi de la requête à la BDD.
 
 exports.addComment = (req, res, next) => {
     let sqlCreateComment = `INSERT INTO commentaires (utilisateur_id, publication_id, message) VALUES ('${req.userId}', '${req.body.postId}', '${req.body.message}')`;
@@ -37,7 +37,7 @@ exports.deleteComment = (req, res, next) => {
 
 // Chargement des commentaires d'une publication :
 // Si les commentaires n'ont pas été trouvés.
-// Si les commentaires ont été trouvés, affichage de tous les commentaires
+// Si les commentaires ont été trouvés, affichage de tous les commentaires.
 
 
 exports.getPostComments = (req, res, next) => {
