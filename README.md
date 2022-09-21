@@ -112,7 +112,7 @@ Lancez l'application : ouvrez l'application en cliquant sur http://localhost:300
 Pour l'Utilisation de l'application : 
 
 - Créez votre compte
-- Pui, Accédez au fil d'actualité en vous identifiant.
+- Puis, Accédez au fil d'actualité en vous identifiant.
 
 Sécurité, Conditions pour la création du mot de passe utilisateur :
 - Minimum de 8 caractères.
