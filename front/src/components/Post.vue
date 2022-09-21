@@ -72,7 +72,7 @@
         />
       </div>
       <div class="post-likes">
-        <i class="far fa-thumbs-up" id="icon-like"></i>
+        <i class="far fa-heart" id="icon-heart"></i>
         <p>{{ post.likes }}</p>
       </div>
     </div>
@@ -283,6 +283,7 @@ export default {
   margin-left: 5%;
   margin-right: 88%;
   justify-content: space-between;
+  color: white;
 }
 
 .card-sep {
@@ -292,6 +293,10 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#icon-heart {
+  transition: transform 0.2s;
+  color: white;
 }
 #icon-like,
 #icon-comment {
@@ -399,7 +404,7 @@ export default {
   background-color:#315ef0;
 }
 .dropdown-btn-comments {
-  color: #fd340a;
+  color: white;
   padding: 16px;
   font-size: 16px;
   border: none;

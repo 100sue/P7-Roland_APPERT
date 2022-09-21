@@ -44,7 +44,7 @@ const router = new createRouter({
 router.beforeEach((to, from, next) => {
   const publicPages = ['/'];
   const authRequired = !publicPages.includes(to.path);
-  const loggedIn = localStorage.getItem('token');
+  const loggedIn = localStorage.getItem('email');
   if (authRequired && !loggedIn) {
     next('/wall');
   } else {

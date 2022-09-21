@@ -218,7 +218,7 @@ export default {
   font-weight: bold;
 }
 .post-header-date {
-  color: #fd340a;
+  color: white;
   font-weight: bold;
 }
 .btn-annuler {

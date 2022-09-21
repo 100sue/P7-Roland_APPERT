@@ -361,7 +361,7 @@ export default {
   right: 0;
   margin-right: 5%;
   background-color: #315ef0;
-  color: #fd340a;
+  color: white;
 }
 
 /* Medium devices (tablets, 768px and up) */
