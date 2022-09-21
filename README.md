@@ -64,8 +64,8 @@ L'utilisateur “lambda” doit pouvoir :
 
 - créer un compte avec : nom - prénom - email - mot de passe.
 - Se logger à partir de son email & mot de passe.
-- Ajouter un avatar (et une description à son profil).
-- L’utilisateur doit pouvoir poster un texte et/ou une image ou un lien.
+- Ajouter un avatar .
+- L’utilisateur doit pouvoir poster un texte et/ou une image.
 - L’utilisateur doit pouvoir modifier ou supprimer son post.
 - L’utilisateur doit pouvoir voir les posts des autres utilisateurs et retrouver simplement un post : 
 1. Option A : Faire apparaitre les posts du plus récent au plus anciens 
@@ -99,8 +99,8 @@ Veuillez cloner ce dépôt : il vous fournira les deux dossiers nécessaires : b
    ### Executer l'application : ###
 
 - Vous aurez besoin de deux fenêtres de terminal : une pour le frontend, une pour le backend. 
-- Sur le terminal backend : exécutez "npm install, puis "npm run dev". 
-- Le serveur doit fonctionner sur localhost avec le port par défaut 3306. 
+- Sur le terminal backend : exécutez "npm install, puis "npm start". 
+- Le serveur doit fonctionner sur localhost avec le port par défaut 3000. 
 - Puis, sur le terminal frontend : lancez "npm install pour installer tous les plugins nécessaires, puis "npm run dev". 
 - Le frontend de l'application est visible sur http:// localhost: 3000/.
     
