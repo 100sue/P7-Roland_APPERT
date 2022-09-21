@@ -14,17 +14,9 @@
           required
         ></textarea>
       </div>
-      <!-- Nouvelle publication : lien -->
+      <!-- Nouvelle publication : vidéo -->
       <div class="post-content">
-        <input
-          type="text"
-          name="postContent"
-          id="postContent"
-          class="post-input"
-          placeholder="Joindre une vidéo ?"
-          title="Joindre un lien"
-          v-model="postForm.link"
-        />
+       
         <!-- Nouvelle publication : image -->
         <div class="post-img">
           <label for="addContent"
@@ -49,7 +41,7 @@ export default {
       postForm: {
         message: "",
         media: "",
-        link: "",
+        
       },
     };
   },
@@ -58,19 +50,19 @@ export default {
     envoiForm(event) {
       const message = this.postForm.message;
       const media = event.target.image.files[0];
-      const link = this.postForm.link;
+     
       // Formulaire contenant les informations du post
       var formData = new FormData();
       formData.append("message", message);
       formData.append("image", media);
-      formData.append("link", link);
+      
       
       this.createPost(formData);
       // Clean des inputs une fois la publication ajoutée
       this.postForm = {
         message: "",
         media: "",
-        link: "",
+       
       };
       event.target.image.value = "";
     },
@@ -123,7 +115,7 @@ textarea {
   display: none;
 }
 .post-img {
-  width: 10%;
+  width: 25%;
   font-size: 1.5em;
   justify-content: center;
   align-content: center;
@@ -134,6 +126,7 @@ textarea {
 }
 .post-img:hover {
   transform: scale(1.1);
+  color: #fd340a;
 }
 .post-btn {
   margin-right: 4%;
