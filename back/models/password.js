@@ -6,7 +6,7 @@ const passwordSchema = new passwordValidator();
 
 // Ajout de conditions qui seront vérifiées à la création du mot de passe :
 // Minimum de 8 caractères,  Maximum de 100 caractères,
-// Devant contenir au moins une majuscule? au moins une minuscule, au moins 2 chiffres, aucun espace.
+// Devant contenir au moins une majuscule, au moins une minuscule, au moins 2 chiffres, aucun espace.
 // Interdiction de ces valeurs : password1234, motdepasse1234.
 
 passwordSchema

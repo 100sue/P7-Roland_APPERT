@@ -70,7 +70,7 @@
                 name="postContent"
                 id="postContent"
                 class="post-input"
-                placeholder="Joindre une vidéo, un lien  ?"
+                placeholder="Joindre une vidéo ?"
                 title="Joindre un lien"
               />
               <div class="post-img">

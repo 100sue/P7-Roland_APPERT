@@ -19,7 +19,7 @@ const commentRoutes = require('./routes/commentRoutes');
 // Création de l'application Express, sécurisée par le package Helmet via la définition d'en-têtes HTTP diverses :
 
 const app = express(); 
-//app.use(helmet());
+app.use(helmet());
 
 // Ajout des headers permettant le Cross Origin Resource Sharing (CORS) :
 // Accès autorisé pour tous, Accès autorisé sous certains en-têtes, Accès autorisé sous certaines méthodes.
